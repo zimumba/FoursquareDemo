@@ -23,11 +23,12 @@
 		172426A8826406EC818EC043 /* NSManagedObjectContext+CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242B7C6755881BAC0D67A4 /* NSManagedObjectContext+CoreDataHelper.swift */; };
 		172427F2E9C19B6A194351C4 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242D0020350BA691DA4BE3 /* AppSettings.swift */; };
 		172428E7202259AA93BE492C /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172423CB756732FEF21FFCB3 /* UserSession.swift */; };
-		172429083B8ECADBF0CD0866 /* FoursqareAuthHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172429F2EBECFDC4523E962A /* FoursqareAuthHelper.swift */; };
+		172429083B8ECADBF0CD0866 /* FoursquareAuthHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172429F2EBECFDC4523E962A /* FoursquareAuthHelper.swift */; };
 		17242A141FC32B1F37938AC0 /* StoryboardsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172427ED71FAE8ABB1ED330E /* StoryboardsFactory.swift */; };
 		17242BDC49E9EA1ECEB4114D /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242014EAD371CACD8B289C /* ServiceLocator.swift */; };
 		17242C02AF48145365632A5A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17242053C22E51825C35DFF4 /* Localizable.strings */; };
 		17242C0C2B4FD4D33250FDB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1724235DAC255784A0C72AF3 /* Assets.xcassets */; };
+		17242F6F8C096B35793B12BF /* FoursquareErrorsWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1724295CA23E1139EC21BE37 /* FoursquareErrorsWrapper.swift */; };
 		17242F95E3366BB6BBC0D0E0 /* AlertsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1724206ADBFCF3ABC3BC3ECF /* AlertsFactory.swift */; };
 		CD35666891C16256CA132E7F /* Pods_FoursquareDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7841A4259B911E5FC49540B7 /* Pods_FoursquareDemo.framework */; };
 /* End PBXBuildFile section */
@@ -37,7 +38,6 @@
 		1344664F1E9EA3C200DC3858 /* FoursquareDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoursquareDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1344665E1E9EA3C200DC3858 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1350C3D71EA24460000F7288 /* FoursquareDemoDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FoursquareDemoDataModel.xcdatamodel; sourceTree = "<group>"; };
-		1350C3D91EA3459D000F7288 /* FoursquareDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FoursquareDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		1350C3DD1EA3479E000F7288 /* AuthorizationStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AuthorizationStoryboard.storyboard; sourceTree = "<group>"; };
 		1350C3DF1EA35222000F7288 /* UserFeedStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserFeedStoryboard.storyboard; sourceTree = "<group>"; };
 		17242006C815A875D3B9BCD5 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -54,8 +54,10 @@
 		1724278EA70673AE3C341DA2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		172427ED71FAE8ABB1ED330E /* StoryboardsFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardsFactory.swift; sourceTree = "<group>"; };
 		17242893A169670E407DA509 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = FoursquareDemo/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		1724295CA23E1139EC21BE37 /* FoursquareErrorsWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoursquareErrorsWrapper.swift; sourceTree = "<group>"; };
 		172429CE9CF6B36581B5962D /* Localization+SwiftGen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Localization+SwiftGen.swift"; sourceTree = "<group>"; };
-		172429F2EBECFDC4523E962A /* FoursqareAuthHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoursqareAuthHelper.swift; sourceTree = "<group>"; };
+		172429F2EBECFDC4523E962A /* FoursquareAuthHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoursquareAuthHelper.swift; sourceTree = "<group>"; };
+		17242AB5F5B87C2DB2876C86 /* FoursquareDemo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FoursquareDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		17242B7C6755881BAC0D67A4 /* NSManagedObjectContext+CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+CoreDataHelper.swift"; sourceTree = "<group>"; };
 		17242D0020350BA691DA4BE3 /* AppSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		17242E1CA467FF76D6D2D98E /* FSOAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSOAuth.m; sourceTree = "<group>"; };
@@ -174,8 +176,8 @@
 		1724246C1624779C69CB3882 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				1350C3D91EA3459D000F7288 /* FoursquareDemo-Bridging-Header.h */,
 				17242D04A19E1F4C8511049A /* FSOAuth */,
+				17242AB5F5B87C2DB2876C86 /* FoursquareDemo-Bridging-Header.h */,
 			);
 			path = Libraries;
 			sourceTree = "<group>";
@@ -264,8 +266,9 @@
 		17242B02BE93328C3C39D93E /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				172429F2EBECFDC4523E962A /* FoursqareAuthHelper.swift */,
+				172429F2EBECFDC4523E962A /* FoursquareAuthHelper.swift */,
 				172420598689D3C8B2EC3E8F /* ScreenTransitionsHelper.swift */,
+				1724295CA23E1139EC21BE37 /* FoursquareErrorsWrapper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -452,9 +455,10 @@
 				172428E7202259AA93BE492C /* UserSession.swift in Sources */,
 				172427F2E9C19B6A194351C4 /* AppSettings.swift in Sources */,
 				172426A8826406EC818EC043 /* NSManagedObjectContext+CoreDataHelper.swift in Sources */,
-				172429083B8ECADBF0CD0866 /* FoursqareAuthHelper.swift in Sources */,
+				172429083B8ECADBF0CD0866 /* FoursquareAuthHelper.swift in Sources */,
 				172426527BAD9A453D31B4AF /* ScreenTransitionsHelper.swift in Sources */,
 				17242F95E3366BB6BBC0D0E0 /* AlertsFactory.swift in Sources */,
+				17242F6F8C096B35793B12BF /* FoursquareErrorsWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

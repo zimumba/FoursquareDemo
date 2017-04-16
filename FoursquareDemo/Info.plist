@@ -23,12 +23,14 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fs.com.aoli.foursquaredemo</string>
+				<string>foursquaredemo</string>
 			</array>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>FoursquareCallbackURL</key>
+	<string>foursquaredemo://authorized</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>

@@ -10,7 +10,21 @@ class UserSession {
 
     let keychain = KeychainSwift()
 
+    static let foursquareAccessGrantKey = "foursquareAccessGrant"
     static let foursquareAccessTokenKey = "foursquareAccessToken"
+
+    var foursquareAccessGrant: String? {
+        set {
+            if let newValue = newValue {
+                self.keychain.set(newValue, forKey: UserSession.foursquareAccessGrantKey)
+            } else {
+                self.keychain.delete(UserSession.foursquareAccessGrantKey)
+            }
+        }
+        get {
+            return self.keychain.get(UserSession.foursquareAccessGrantKey)
+        }
+    }
 
     var foursquareAccessToken: String? {
         set {
@@ -26,6 +40,7 @@ class UserSession {
     }
 
     static func logout() {
+        UserSession().foursquareAccessGrant = nil
         UserSession().foursquareAccessToken = nil
     }
 }

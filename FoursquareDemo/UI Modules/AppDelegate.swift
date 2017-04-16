@@ -33,5 +33,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         return true
     }
+
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey: Any]) -> Bool {
+        return self.serviceLocator.foursquareAuthHelper.application(app, open: url, options: options)
+    }
 }
 

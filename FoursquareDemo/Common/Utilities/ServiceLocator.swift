@@ -12,7 +12,7 @@ class ServiceLocator {
     var apiClient: APIClient = APIClient(baseURL: URL(string: APIURLs.baseURL))
     var userSession: UserSession = UserSession()
     var appSettings: AppSettings = AppSettings()
-    var foursquareAuthHelper: FoursqareAuthHelper = FoursqareAuthHelper()
+    var foursquareAuthHelper: FoursquareAuthHelper = FoursquareAuthHelper()
 
     init() {
         if !self.appSettings.notFirstLaunch {

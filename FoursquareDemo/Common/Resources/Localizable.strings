@@ -3,4 +3,20 @@
 
 "OK" = "OK";
 "Cancel" = "Cancel";
-"Error" = "Error";
+"ErrorText" = "Error";
+
+"LoadingText" = "Loading...";
+
+"Error.Foursquare.AuthError.InvalidClient" = "Invalid client";
+"Error.Foursquare.AuthError.InvalidGrant" = "Invalid grant";
+"Error.Foursquare.AuthError.InvalidRequest" = "Invalid request";
+"Error.Foursquare.AuthError.UnauthorizedClient" = "Unauthorized client";
+"Error.Foursquare.AuthError.UnsupportedGrant" = "Unsupported grant";
+"Error.Foursquare.AuthError.Unknown" = "Unknown";
+"Error.Foursquare.AuthError.NetworkError" = "An error occured when attempting o connect to the Foursquare server";
+
+"Error.Foursquare.AuthStatus.InvalidCallback" = "Invalid callback URI";
+"Error.Foursquare.AuthStatus.FoursquareNotInstalled" = "Foursquare is not installed";
+"Error.Foursquare.AuthStatus.InvalidClientId" = "Invalid client id";
+"Error.Foursquare.AuthStatus.FoursquareOAuthNotSupported" = "Installed FSQ App doesn't support oauth";
+"Error.Foursquare.AuthStatus.Unknown" = "Unknown";

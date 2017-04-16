@@ -17,7 +17,7 @@ class AlertsFactory {
     }
 
     static func errorAlertController(withErrorMessage errorMessage: String?) -> UIAlertController {
-        let alertController = UIAlertController(title: L10n.Error, message: errorMessage, preferredStyle: .alert)
+        let alertController = UIAlertController(title: L10n.ErrorText, message: errorMessage, preferredStyle: .alert)
 
         alertController.addAction(UIAlertAction(title: L10n.OK, style: .default))
 

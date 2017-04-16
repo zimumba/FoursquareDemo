@@ -5,6 +5,7 @@
 
 import Foundation
 import UIKit
+import SVProgressHUD
 
 class SignInViewController: UIViewController {
 
@@ -15,14 +16,22 @@ class SignInViewController: UIViewController {
     }
 
     @IBAction fileprivate func signInButtonAction(_: AnyObject) {
-        serviceLocator().foursquareAuthHelper.requestAccessToken { [weak self] accessToken, error in
+        serviceLocator().foursquareAuthHelper.requestAccessGrant { [weak self] token, error in
             if let error = error {
                 let alertController = AlertsFactory.errorAlertController(withErrorMessage: error.localizedDescription)
                 self?.present(alertController, animated: true)
             } else {
-                serviceLocator().userSession.foursquareAccessToken = accessToken
+                serviceLocator().userSession.foursquareAccessGrant = token
 
-                ScreenTransitionsHelper.transitionToUserFeedScreen()
+                SVProgressHUD.show(withStatus: L10n.LoadingText)
+                serviceLocator().foursquareAuthHelper.requestAccessToken(code: token!) { token, error in
+                    SVProgressHUD.dismiss()
+                    print(token)
+
+//                    serviceLocator().userSession.foursquareAccessToken = accessToken
+
+                    ScreenTransitionsHelper.transitionToUserFeedScreen()
+                }
             }
         }
     }

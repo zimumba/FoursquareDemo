@@ -14,7 +14,9 @@ struct L10n {
   /// Cancel
   static let Cancel = L10n.tr("Cancel")
   /// Error
-  static let Error = L10n.tr("Error")
+  static let ErrorText = L10n.tr("ErrorText")
+  /// Loading...
+  static let LoadingText = L10n.tr("LoadingText")
 
   struct Controller {
 
@@ -23,6 +25,42 @@ struct L10n {
       static let SignIn = L10n.tr("Controller.Title.SignIn")
       /// User Feed
       static let UserFeed = L10n.tr("Controller.Title.UserFeed")
+    }
+  }
+
+  struct Error {
+
+    struct Foursquare {
+
+      struct Autherror {
+        /// Invalid client
+        static let InvalidClient = L10n.tr("Error.Foursquare.AuthError.InvalidClient")
+        /// Invalid grant
+        static let InvalidGrant = L10n.tr("Error.Foursquare.AuthError.InvalidGrant")
+        /// Invalid request
+        static let InvalidRequest = L10n.tr("Error.Foursquare.AuthError.InvalidRequest")
+        /// Unauthorized client
+        static let UnauthorizedClient = L10n.tr("Error.Foursquare.AuthError.UnauthorizedClient")
+        /// Unsupported grant
+        static let UnsupportedGrant = L10n.tr("Error.Foursquare.AuthError.UnsupportedGrant")
+        /// Unknown
+        static let Unknown = L10n.tr("Error.Foursquare.AuthError.Unknown")
+        /// An error occured when attempting o connect to the Foursquare server
+        static let NetworkError = L10n.tr("Error.Foursquare.AuthError.NetworkError")
+      }
+
+      struct Authstatus {
+        /// Invalid callback URI
+        static let InvalidCallback = L10n.tr("Error.Foursquare.AuthStatus.InvalidCallback")
+        /// Foursquare is not installed
+        static let FoursquareNotInstalled = L10n.tr("Error.Foursquare.AuthStatus.FoursquareNotInstalled")
+        /// Invalid client id
+        static let InvalidClientId = L10n.tr("Error.Foursquare.AuthStatus.InvalidClientId")
+        /// Installed FSQ App doesn't support oauth
+        static let FoursquareOAuthNotSupported = L10n.tr("Error.Foursquare.AuthStatus.FoursquareOAuthNotSupported")
+        /// Unknown
+        static let Unknown = L10n.tr("Error.Foursquare.AuthStatus.Unknown")
+      }
     }
   }
 }
