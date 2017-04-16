@@ -7,21 +7,61 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		134466531E9EA3C200DC3858 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134466521E9EA3C200DC3858 /* AppDelegate.swift */; };
-		134466551E9EA3C200DC3858 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134466541E9EA3C200DC3858 /* ViewController.swift */; };
-		134466581E9EA3C200DC3858 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 134466561E9EA3C200DC3858 /* Main.storyboard */; };
-		1344665A1E9EA3C200DC3858 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 134466591E9EA3C200DC3858 /* Assets.xcassets */; };
-		1344665D1E9EA3C200DC3858 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1344665B1E9EA3C200DC3858 /* LaunchScreen.storyboard */; };
+		1350C3D81EA24460000F7288 /* FoursquareDemoDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1350C3D61EA24460000F7288 /* FoursquareDemoDataModel.xcdatamodeld */; };
+		1350C3DE1EA3479E000F7288 /* AuthorizationStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1350C3DD1EA3479E000F7288 /* AuthorizationStoryboard.storyboard */; };
+		1350C3E01EA35222000F7288 /* UserFeedStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1350C3DF1EA35222000F7288 /* UserFeedStoryboard.storyboard */; };
+		1724208F75E2D3AD7653C035 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1724278EA70673AE3C341DA2 /* AppDelegate.swift */; };
+		17242188F45BE64675009BAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1724219D8A4E5F7B267B2218 /* LaunchScreen.storyboard */; };
+		172423A4DC17DFAAA0171962 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242F838F208412A679C26D /* CoreDataHelper.swift */; };
+		172423E0E4A5293EB483387F /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242006C815A875D3B9BCD5 /* SignInViewController.swift */; };
+		1724247B301BE61C58538E88 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1724252C5D01796D79E00986 /* Types.swift */; };
+		17242497BBD0F605ED130F4D /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172420EBEB232EB034DAB806 /* APIClient.swift */; };
+		172424F8E454EF52F90B9C10 /* Localization+SwiftGen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172429CE9CF6B36581B5962D /* Localization+SwiftGen.swift */; };
+		1724257C339F32C558DF662E /* FSOAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 17242E1CA467FF76D6D2D98E /* FSOAuth.m */; };
+		172425BD00D92B5AE6CF30E5 /* APIURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242418F3192BB8A0A9B16A /* APIURLs.swift */; };
+		172426527BAD9A453D31B4AF /* ScreenTransitionsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172420598689D3C8B2EC3E8F /* ScreenTransitionsHelper.swift */; };
+		172426A8826406EC818EC043 /* NSManagedObjectContext+CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242B7C6755881BAC0D67A4 /* NSManagedObjectContext+CoreDataHelper.swift */; };
+		172427F2E9C19B6A194351C4 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242D0020350BA691DA4BE3 /* AppSettings.swift */; };
+		172428E7202259AA93BE492C /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172423CB756732FEF21FFCB3 /* UserSession.swift */; };
+		172429083B8ECADBF0CD0866 /* FoursqareAuthHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172429F2EBECFDC4523E962A /* FoursqareAuthHelper.swift */; };
+		17242A141FC32B1F37938AC0 /* StoryboardsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172427ED71FAE8ABB1ED330E /* StoryboardsFactory.swift */; };
+		17242BDC49E9EA1ECEB4114D /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242014EAD371CACD8B289C /* ServiceLocator.swift */; };
+		17242C02AF48145365632A5A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17242053C22E51825C35DFF4 /* Localizable.strings */; };
+		17242C0C2B4FD4D33250FDB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1724235DAC255784A0C72AF3 /* Assets.xcassets */; };
+		17242F95E3366BB6BBC0D0E0 /* AlertsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1724206ADBFCF3ABC3BC3ECF /* AlertsFactory.swift */; };
+		CD35666891C16256CA132E7F /* Pods_FoursquareDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7841A4259B911E5FC49540B7 /* Pods_FoursquareDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07F85C64349E10EA073D90FD /* Pods-FoursquareDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoursquareDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoursquareDemo/Pods-FoursquareDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		1344664F1E9EA3C200DC3858 /* FoursquareDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoursquareDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		134466521E9EA3C200DC3858 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		134466541E9EA3C200DC3858 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		134466571E9EA3C200DC3858 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		134466591E9EA3C200DC3858 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1344665C1E9EA3C200DC3858 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1344665E1E9EA3C200DC3858 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1350C3D71EA24460000F7288 /* FoursquareDemoDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FoursquareDemoDataModel.xcdatamodel; sourceTree = "<group>"; };
+		1350C3D91EA3459D000F7288 /* FoursquareDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FoursquareDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		1350C3DD1EA3479E000F7288 /* AuthorizationStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AuthorizationStoryboard.storyboard; sourceTree = "<group>"; };
+		1350C3DF1EA35222000F7288 /* UserFeedStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserFeedStoryboard.storyboard; sourceTree = "<group>"; };
+		17242006C815A875D3B9BCD5 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		17242014EAD371CACD8B289C /* ServiceLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
+		17242053C22E51825C35DFF4 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		172420598689D3C8B2EC3E8F /* ScreenTransitionsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenTransitionsHelper.swift; sourceTree = "<group>"; };
+		1724206ADBFCF3ABC3BC3ECF /* AlertsFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertsFactory.swift; sourceTree = "<group>"; };
+		172420EBEB232EB034DAB806 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		1724228E6591AB1083EA8489 /* FSOAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSOAuth.h; sourceTree = "<group>"; };
+		1724235DAC255784A0C72AF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		172423CB756732FEF21FFCB3 /* UserSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSession.swift; sourceTree = "<group>"; };
+		17242418F3192BB8A0A9B16A /* APIURLs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIURLs.swift; sourceTree = "<group>"; };
+		1724252C5D01796D79E00986 /* Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		1724278EA70673AE3C341DA2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		172427ED71FAE8ABB1ED330E /* StoryboardsFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardsFactory.swift; sourceTree = "<group>"; };
+		17242893A169670E407DA509 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = FoursquareDemo/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		172429CE9CF6B36581B5962D /* Localization+SwiftGen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Localization+SwiftGen.swift"; sourceTree = "<group>"; };
+		172429F2EBECFDC4523E962A /* FoursqareAuthHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoursqareAuthHelper.swift; sourceTree = "<group>"; };
+		17242B7C6755881BAC0D67A4 /* NSManagedObjectContext+CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+CoreDataHelper.swift"; sourceTree = "<group>"; };
+		17242D0020350BA691DA4BE3 /* AppSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		17242E1CA467FF76D6D2D98E /* FSOAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSOAuth.m; sourceTree = "<group>"; };
+		17242F838F208412A679C26D /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		7841A4259B911E5FC49540B7 /* Pods_FoursquareDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoursquareDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DB842E4CB55D8FB1838CAB4 /* Pods-FoursquareDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoursquareDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoursquareDemo/Pods-FoursquareDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD35666891C16256CA132E7F /* Pods_FoursquareDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +81,8 @@
 			children = (
 				134466511E9EA3C200DC3858 /* FoursquareDemo */,
 				134466501E9EA3C200DC3858 /* Products */,
+				1452DF147BC203C890B58DDD /* Pods */,
+				CFF7397D346490F414C8D6B6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +97,218 @@
 		134466511E9EA3C200DC3858 /* FoursquareDemo */ = {
 			isa = PBXGroup;
 			children = (
-				134466521E9EA3C200DC3858 /* AppDelegate.swift */,
-				134466541E9EA3C200DC3858 /* ViewController.swift */,
-				134466561E9EA3C200DC3858 /* Main.storyboard */,
-				134466591E9EA3C200DC3858 /* Assets.xcassets */,
-				1344665B1E9EA3C200DC3858 /* LaunchScreen.storyboard */,
 				1344665E1E9EA3C200DC3858 /* Info.plist */,
+				172427C161019A6A01A2A08A /* Common */,
+				1724283E8EF0B2DF6B3A22A1 /* UI Modules */,
 			);
 			path = FoursquareDemo;
+			sourceTree = "<group>";
+		};
+		1452DF147BC203C890B58DDD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				07F85C64349E10EA073D90FD /* Pods-FoursquareDemo.debug.xcconfig */,
+				9DB842E4CB55D8FB1838CAB4 /* Pods-FoursquareDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		17242062A4606B58FF0AEACC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1724235DAC255784A0C72AF3 /* Assets.xcassets */,
+				17242053C22E51825C35DFF4 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1724206FC08A55F798B4CE6B /* Autogenerated */ = {
+			isa = PBXGroup;
+			children = (
+				172429CE9CF6B36581B5962D /* Localization+SwiftGen.swift */,
+			);
+			path = Autogenerated;
+			sourceTree = "<group>";
+		};
+		172420BB6882B2DAF2A4CD20 /* ApiClient */ = {
+			isa = PBXGroup;
+			children = (
+				172420EBEB232EB034DAB806 /* APIClient.swift */,
+			);
+			path = ApiClient;
+			sourceTree = "<group>";
+		};
+		1724220ED519DA2A0262E59E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				17242006C815A875D3B9BCD5 /* SignInViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		172422EE06D8911CFE632B5B /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				1350C3D61EA24460000F7288 /* FoursquareDemoDataModel.xcdatamodeld */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		17242328E1E66185495E49F8 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				1724252C5D01796D79E00986 /* Types.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		172423603CE363086C2AEA29 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				172423CB756732FEF21FFCB3 /* UserSession.swift */,
+				17242D0020350BA691DA4BE3 /* AppSettings.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		1724246C1624779C69CB3882 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1350C3D91EA3459D000F7288 /* FoursquareDemo-Bridging-Header.h */,
+				17242D04A19E1F4C8511049A /* FSOAuth */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		172424DB5BB9B869161AC83C /* UserFeed */ = {
+			isa = PBXGroup;
+			children = (
+				172429B2CCC6718B0E499D94 /* Storyboards */,
+				17242BA47BB356DE06714D00 /* ViewControllers */,
+			);
+			path = UserFeed;
+			sourceTree = "<group>";
+		};
+		1724257093484D75E0377EE1 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1350C3DD1EA3479E000F7288 /* AuthorizationStoryboard.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		1724260B4F4E9D707201DB0B /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				172427ED71FAE8ABB1ED330E /* StoryboardsFactory.swift */,
+				1724206ADBFCF3ABC3BC3ECF /* AlertsFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		1724278131EB84CEC1CDF98E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				17242014EAD371CACD8B289C /* ServiceLocator.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		172427C161019A6A01A2A08A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				17242062A4606B58FF0AEACC /* Resources */,
+				1724219D8A4E5F7B267B2218 /* LaunchScreen.storyboard */,
+				1724278131EB84CEC1CDF98E /* Utilities */,
+				1724206FC08A55F798B4CE6B /* Autogenerated */,
+				172422EE06D8911CFE632B5B /* DataModel */,
+				17242CFBE238D300B467AF5F /* CoreDataHelper */,
+				17242328E1E66185495E49F8 /* Types */,
+				172420BB6882B2DAF2A4CD20 /* ApiClient */,
+				17242B66ED8397FA50691D3B /* Constants */,
+				1724246C1624779C69CB3882 /* Libraries */,
+				1724260B4F4E9D707201DB0B /* Factories */,
+				172423603CE363086C2AEA29 /* Settings */,
+				17242B02BE93328C3C39D93E /* Helpers */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		1724283E8EF0B2DF6B3A22A1 /* UI Modules */ = {
+			isa = PBXGroup;
+			children = (
+				17242A2A22B5EFC7D9A28B5B /* Authorization */,
+				1724278EA70673AE3C341DA2 /* AppDelegate.swift */,
+				172424DB5BB9B869161AC83C /* UserFeed */,
+			);
+			path = "UI Modules";
+			sourceTree = "<group>";
+		};
+		172429B2CCC6718B0E499D94 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1350C3DF1EA35222000F7288 /* UserFeedStoryboard.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		17242A2A22B5EFC7D9A28B5B /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				1724257093484D75E0377EE1 /* Storyboards */,
+				1724220ED519DA2A0262E59E /* ViewControllers */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		17242B02BE93328C3C39D93E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				172429F2EBECFDC4523E962A /* FoursqareAuthHelper.swift */,
+				172420598689D3C8B2EC3E8F /* ScreenTransitionsHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		17242B66ED8397FA50691D3B /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				17242418F3192BB8A0A9B16A /* APIURLs.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		17242BA47BB356DE06714D00 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		17242CFBE238D300B467AF5F /* CoreDataHelper */ = {
+			isa = PBXGroup;
+			children = (
+				17242F838F208412A679C26D /* CoreDataHelper.swift */,
+				17242B7C6755881BAC0D67A4 /* NSManagedObjectContext+CoreDataHelper.swift */,
+			);
+			path = CoreDataHelper;
+			sourceTree = "<group>";
+		};
+		17242D04A19E1F4C8511049A /* FSOAuth */ = {
+			isa = PBXGroup;
+			children = (
+				1724228E6591AB1083EA8489 /* FSOAuth.h */,
+				17242E1CA467FF76D6D2D98E /* FSOAuth.m */,
+			);
+			path = FSOAuth;
+			sourceTree = "<group>";
+		};
+		CFF7397D346490F414C8D6B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7841A4259B911E5FC49540B7 /* Pods_FoursquareDemo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +318,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 134466611E9EA3C200DC3858 /* Build configuration list for PBXNativeTarget "FoursquareDemo" */;
 			buildPhases = (
+				8AB27A6F2C43E4181F88F359 /* [CP] Check Pods Manifest.lock */,
 				1344664B1E9EA3C200DC3858 /* Sources */,
 				1344664C1E9EA3C200DC3858 /* Frameworks */,
 				1344664D1E9EA3C200DC3858 /* Resources */,
+				10BCA08310BCB2F429D3B4BD /* [CP] Embed Pods Frameworks */,
+				1588FB2DF50323CA1E71502A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +346,8 @@
 				TargetAttributes = {
 					1344664E1E9EA3C200DC3858 = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 676RC7JHF7;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -123,39 +375,96 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1344665D1E9EA3C200DC3858 /* LaunchScreen.storyboard in Resources */,
-				1344665A1E9EA3C200DC3858 /* Assets.xcassets in Resources */,
-				134466581E9EA3C200DC3858 /* Main.storyboard in Resources */,
+				17242C0C2B4FD4D33250FDB8 /* Assets.xcassets in Resources */,
+				17242188F45BE64675009BAB /* LaunchScreen.storyboard in Resources */,
+				17242C02AF48145365632A5A /* Localizable.strings in Resources */,
+				1350C3DE1EA3479E000F7288 /* AuthorizationStoryboard.storyboard in Resources */,
+				1350C3E01EA35222000F7288 /* UserFeedStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10BCA08310BCB2F429D3B4BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FoursquareDemo/Pods-FoursquareDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1588FB2DF50323CA1E71502A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FoursquareDemo/Pods-FoursquareDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AB27A6F2C43E4181F88F359 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1344664B1E9EA3C200DC3858 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				134466551E9EA3C200DC3858 /* ViewController.swift in Sources */,
-				134466531E9EA3C200DC3858 /* AppDelegate.swift in Sources */,
+				1724208F75E2D3AD7653C035 /* AppDelegate.swift in Sources */,
+				1350C3D81EA24460000F7288 /* FoursquareDemoDataModel.xcdatamodeld in Sources */,
+				17242BDC49E9EA1ECEB4114D /* ServiceLocator.swift in Sources */,
+				172424F8E454EF52F90B9C10 /* Localization+SwiftGen.swift in Sources */,
+				172423A4DC17DFAAA0171962 /* CoreDataHelper.swift in Sources */,
+				1724247B301BE61C58538E88 /* Types.swift in Sources */,
+				17242497BBD0F605ED130F4D /* APIClient.swift in Sources */,
+				172425BD00D92B5AE6CF30E5 /* APIURLs.swift in Sources */,
+				1724257C339F32C558DF662E /* FSOAuth.m in Sources */,
+				17242A141FC32B1F37938AC0 /* StoryboardsFactory.swift in Sources */,
+				172423E0E4A5293EB483387F /* SignInViewController.swift in Sources */,
+				172428E7202259AA93BE492C /* UserSession.swift in Sources */,
+				172427F2E9C19B6A194351C4 /* AppSettings.swift in Sources */,
+				172426A8826406EC818EC043 /* NSManagedObjectContext+CoreDataHelper.swift in Sources */,
+				172429083B8ECADBF0CD0866 /* FoursqareAuthHelper.swift in Sources */,
+				172426527BAD9A453D31B4AF /* ScreenTransitionsHelper.swift in Sources */,
+				17242F95E3366BB6BBC0D0E0 /* AlertsFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		134466561E9EA3C200DC3858 /* Main.storyboard */ = {
+		1724219D8A4E5F7B267B2218 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				134466571E9EA3C200DC3858 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1344665B1E9EA3C200DC3858 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1344665C1E9EA3C200DC3858 /* Base */,
+				17242893A169670E407DA509 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -258,24 +567,33 @@
 		};
 		134466621E9EA3C200DC3858 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07F85C64349E10EA073D90FD /* Pods-FoursquareDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 676RC7JHF7;
 				INFOPLIST_FILE = FoursquareDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aoli.FoursquareDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FoursquareDemo/Common/Libraries/FoursquareDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		134466631E9EA3C200DC3858 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DB842E4CB55D8FB1838CAB4 /* Pods-FoursquareDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 676RC7JHF7;
 				INFOPLIST_FILE = FoursquareDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aoli.FoursquareDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FoursquareDemo/Common/Libraries/FoursquareDemo-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -299,8 +617,22 @@
 				134466631E9EA3C200DC3858 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1350C3D61EA24460000F7288 /* FoursquareDemoDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1350C3D71EA24460000F7288 /* FoursquareDemoDataModel.xcdatamodel */,
+			);
+			currentVersion = 1350C3D71EA24460000F7288 /* FoursquareDemoDataModel.xcdatamodel */;
+			path = FoursquareDemoDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 134466471E9EA3C200DC3858 /* Project object */;
 }

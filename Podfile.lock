@@ -1,0 +1,43 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - FastEasyMapping (1.1.1)
+  - KeychainSwift (7.0.0)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - SVProgressHUD (2.0.3)
+  - SwiftGen (3.0.1)
+
+DEPENDENCIES:
+  - AFNetworking
+  - FastEasyMapping
+  - KeychainSwift
+  - SDWebImage
+  - SVProgressHUD
+  - SwiftGen
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  FastEasyMapping: 831fa5ee2c7038542b9fee90aee4fd8f6b959f1c
+  KeychainSwift: b6947435dd78cc442c64a84ae648dd0e871cf448
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
+  SwiftGen: 5f69367fae99c11d52d1ab9d45dcf10a3e59b8ef
+
+PODFILE CHECKSUM: 47548e686d50fa77f8202b74d5c6a33492b97f27
+
+COCOAPODS: 1.1.1
