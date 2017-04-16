@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.serviceLocator = ServiceLocator()
 
         var controller: UIViewController!
-        if self.serviceLocator.userSession.foursquareAccessToken != nil {
+        if self.serviceLocator.userSession.foursquareAccessGrant != nil {
             controller = StoryboardsFactory.userFeedStoryboard().instantiateInitialViewController()
         } else {
             controller = StoryboardsFactory.authorizationStoryboard().instantiateInitialViewController()

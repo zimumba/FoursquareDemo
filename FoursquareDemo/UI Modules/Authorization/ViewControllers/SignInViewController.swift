@@ -26,9 +26,8 @@ class SignInViewController: UIViewController {
                 SVProgressHUD.show(withStatus: L10n.LoadingText)
                 serviceLocator().foursquareAuthHelper.requestAccessToken(code: token!) { token, error in
                     SVProgressHUD.dismiss()
-                    print(token)
 
-//                    serviceLocator().userSession.foursquareAccessToken = accessToken
+                    serviceLocator().userSession.foursquareAccessToken = token
 
                     ScreenTransitionsHelper.transitionToUserFeedScreen()
                 }
