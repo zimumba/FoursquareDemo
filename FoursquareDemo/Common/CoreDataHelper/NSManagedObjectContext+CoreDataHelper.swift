@@ -30,4 +30,16 @@ extension NSManagedObjectContext {
             }
         }
     }
+
+    func objects<T: NSManagedObject>(withIDs identifiers: [NSManagedObjectID]?) -> [T]? {
+        if let identifiers = identifiers, identifiers.count > 0 {
+            return identifiers.map { objectID -> T in
+                guard let object = self.object(with: objectID) as? T else { fatalError("Unexpected entity type") }
+
+                return object
+            }
+        } else {
+            return nil
+        }
+    }
 }

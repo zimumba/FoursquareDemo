@@ -25,11 +25,22 @@ class SignInViewController: UIViewController {
 
                 SVProgressHUD.show(withStatus: L10n.LoadingText)
                 serviceLocator().foursquareAuthHelper.requestAccessToken(code: token!) { token, error in
-                    SVProgressHUD.dismiss()
-
                     serviceLocator().userSession.foursquareAccessToken = token
 
-                    ScreenTransitionsHelper.transitionToUserFeedScreen()
+                    serviceLocator().apiClient.getCurrentUser { [weak self] user, error in
+                        SVProgressHUD.dismiss()
+
+                        if let error = error {
+                            let alertController = AlertsFactory.errorAlertController(withErrorMessage: error.localizedDescription)
+                            self?.present(alertController, animated: true)
+                        } else {
+                            guard let userID = user?.identifier else { fatalError("Unexpected user identifier is empty") }
+
+                            serviceLocator().userSession.currentUserID = userID
+
+                            ScreenTransitionsHelper.transitionToUserFeedScreen()
+                        }
+                    }
                 }
             }
         }

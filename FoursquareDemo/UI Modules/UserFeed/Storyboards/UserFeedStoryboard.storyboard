@@ -118,7 +118,13 @@
                             <outlet property="delegate" destination="Jck-9O-G5u" id="pAc-4J-KX2"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="r1v-GN-xmH"/>
+                    <navigationItem key="navigationItem" id="r1v-GN-xmH">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="g4e-mo-p26">
+                            <connections>
+                                <action selector="logoutButtonAction" destination="Jck-9O-G5u" id="EfM-oU-Vpw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uv4-uP-i0C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -128,6 +134,10 @@
         <scene sceneID="8WE-WB-2uk">
             <objects>
                 <viewController id="y8G-nK-Yrd" customClass="CheckinsViewController" customModule="FoursquareDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SVY-wA-7re"/>
+                        <viewControllerLayoutGuide type="bottom" id="wSf-g5-Aat"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="UUR-OQ-n0h">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -142,6 +152,10 @@
         <scene sceneID="6ph-r3-rPG">
             <objects>
                 <viewController id="XmL-xM-qwZ" customClass="FriendsViewController" customModule="FoursquareDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5Iy-dl-N05"/>
+                        <viewControllerLayoutGuide type="bottom" id="yxm-Mf-YFL"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="slC-0F-bjy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -156,6 +170,10 @@
         <scene sceneID="U6a-tH-G3l">
             <objects>
                 <viewController id="Bo4-ge-yct" customClass="CheckinsViewController" customModule="FoursquareDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gYV-YN-7vr"/>
+                        <viewControllerLayoutGuide type="bottom" id="nxs-yz-LxK"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bWD-MM-tjR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

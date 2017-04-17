@@ -7,5 +7,15 @@ import Foundation
 
 class APIURLs {
 
-    static let baseURL = "https://ting.testwerk.org"
+    static let baseURL = "https://api.foursquare.com"
+
+    static let getCurrentUserPath = "v2/users/self"
+
+    static func oauthPath(_ path: String) -> String {
+        if let token = serviceLocator().userSession.foursquareAccessToken {
+            return "\(path)?oauth_token=\(token)&v=\(serviceLocator().dateFormattersLocator.oauthVersionDateFormatter.string(from: Date()))"
+        } else {
+            return path
+        }
+    }
 }

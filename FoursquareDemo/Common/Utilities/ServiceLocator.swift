@@ -13,6 +13,7 @@ class ServiceLocator {
     var userSession: UserSession = UserSession()
     var appSettings: AppSettings = AppSettings()
     var foursquareAuthHelper: FoursquareAuthHelper = FoursquareAuthHelper()
+    var dateFormattersLocator: DateFormattersLocator = DateFormattersLocator()
 
     init() {
         if !self.appSettings.notFirstLaunch {

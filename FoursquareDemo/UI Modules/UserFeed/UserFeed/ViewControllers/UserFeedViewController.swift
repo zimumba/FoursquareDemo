@@ -47,4 +47,8 @@ class UserFeedViewController: UITableViewController {
             return 0
         }
     }
+
+    @IBAction fileprivate func logoutButtonAction() {
+        LogoutWrapper.logout()
+    }
 }
