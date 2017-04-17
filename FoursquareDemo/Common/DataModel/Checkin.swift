@@ -2,5 +2,8 @@ import Foundation
 
 @objc(Checkin)
 open class Checkin: _Checkin {
-	// Custom logic goes here.
+
+    var creationDate: Date {
+        return Date(timeIntervalSince1970: self.createdAt.doubleValue)
+    }
 }

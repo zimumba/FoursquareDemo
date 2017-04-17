@@ -40,7 +40,7 @@ open class _Checkin: NSManagedObject {
     // MARK: - Properties
 
     @NSManaged open
-    var createdAt: NSNumber?
+    var createdAt: NSNumber
 
     @NSManaged open
     var identifier: String?

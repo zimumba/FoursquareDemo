@@ -6,31 +6,28 @@
 import Foundation
 import UIKit
 
-class FriendsViewController: UIViewController {
+class FriendsViewController: UserFeedBasicViewController<User> {
 
-    fileprivate var networkTask: URLSessionTask?
+    override func setupDataSource() {
+        guard let currentUser = User.currentUser() else { fatalError("Unexpected current user is empty") }
 
-    deinit {
-        self.networkTask?.cancel()
+        let predicate = NSPredicate(format: "SUBQUERY(%K, $reversalFriend, $reversalFriend == %@).@count > 0", UserRelationships.friendsReversal.rawValue, currentUser)
+        let sortDescriptors = [
+            NSSortDescriptor(key: UserAttributes.lastName.rawValue, ascending: true),
+            NSSortDescriptor(key: UserAttributes.firstName.rawValue, ascending: true)
+        ]
+
+        self.dataSource = FetchedDataSource(entityName: User.entityName(), predicate: predicate, sortDescriptors: sortDescriptors)
     }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        self.reloadData()
+    override func performNetworkTask(completion: DefaultFetchCompletionHandler?) -> URLSessionTask {
+        return serviceLocator().apiClient.getFriends(completion: completion)
     }
 
-    fileprivate func reloadData() {
-        self.networkTask?.cancel()
-        self.networkTask = serviceLocator().apiClient.getFriends() { [weak self] friends, Error in
-            
-        }
-    }
-}
+    public override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell: FriendTableViewCell = tableView.dequeueCell(forIndexPath: indexPath)
+        cell.user = self.dataSource.object(at: indexPath)
 
-extension FriendsViewController: UserFeedChildController {
-
-    func contentHeight() -> CGFloat {
-        return 0
+        return cell
     }
 }

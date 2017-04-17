@@ -6,31 +6,27 @@
 import Foundation
 import UIKit
 
-class CheckinsViewController: UIViewController {
+class CheckinsViewController: UserFeedBasicViewController<Checkin> {
 
-    fileprivate var networkTask: URLSessionTask?
+    override func setupDataSource() {
+        guard let currentUser = User.currentUser() else { fatalError("Unexpected current user is empty") }
 
-    deinit {
-        self.networkTask?.cancel()
+        let predicate = NSPredicate(format: "%K == %@", CheckinRelationships.user.rawValue, currentUser)
+        let sortDescriptors = [
+                NSSortDescriptor(key: CheckinAttributes.createdAt.rawValue, ascending: true),
+        ]
+
+        self.dataSource = FetchedDataSource(entityName: Checkin.entityName(), predicate: predicate, sortDescriptors: sortDescriptors)
     }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        self.reloadData()
+    override func performNetworkTask(completion: DefaultFetchCompletionHandler?) -> URLSessionTask {
+        return serviceLocator().apiClient.getCheckins(completion: completion)
     }
 
-    fileprivate func reloadData() {
-        self.networkTask?.cancel()
-        self.networkTask = serviceLocator().apiClient.getCheckins() { [weak self] checkins, Error in
-            
-        }
-    }
-}
+    public override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell: CheckinTableViewCell = tableView.dequeueCell(forIndexPath: indexPath)
+        cell.checkin = self.dataSource.object(at: indexPath)
 
-extension CheckinsViewController: UserFeedChildController {
-
-    func contentHeight() -> CGFloat {
-        return 0
+        return cell
     }
 }

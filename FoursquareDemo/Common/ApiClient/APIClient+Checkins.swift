@@ -10,7 +10,7 @@ import CoreData
 
 extension APIClient {
 
-    @discardableResult func getCheckins(offset: Int = 0, limit: Int = 10, completion: (([Checkin]?, Error?) -> Void)?) -> URLSessionTask {
+    @discardableResult func getCheckins(offset: Int = 0, limit: Int = 10, completion: DefaultFetchCompletionHandler?) -> URLSessionTask {
         let path = APIURLs.oauthPath(APIURLs.getCheckinsPath)
 
         let parameters = [
@@ -25,7 +25,7 @@ extension APIClient {
         })!
     }
 
-    fileprivate func parseCheckinsResponse(responseObject: Any?, completion: (([Checkin]?, Error?) -> Void)?) {
+    fileprivate func parseCheckinsResponse(responseObject: Any?, completion: DefaultFetchCompletionHandler?) {
         guard let responseObject = responseObject as? [String: AnyObject] else { fatalError("Can not parse response") }
         guard let response = responseObject["response"] as? [String: AnyObject] else { fatalError("Can not parse response") }
         guard let responseCheckins = response["checkins"] as? [String: AnyObject] else { fatalError("Can not parse response") }

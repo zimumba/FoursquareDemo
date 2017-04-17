@@ -8,4 +8,6 @@ import Foundation
 protocol UserFeedChildController {
 
     func contentHeight() -> CGFloat
+
+    var didChangeContentHeightHandler: ((CGFloat) -> Void)? {get set}
 }

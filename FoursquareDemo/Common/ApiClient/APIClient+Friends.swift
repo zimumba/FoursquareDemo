@@ -10,7 +10,7 @@ import CoreData
 
 extension APIClient {
 
-    @discardableResult func getFriends(offset: Int = 0, limit: Int = 10, completion: (([User]?, Error?) -> Void)?) -> URLSessionTask {
+    @discardableResult func getFriends(offset: Int = 0, limit: Int = 10, completion: DefaultFetchCompletionHandler?) -> URLSessionTask {
         let path = APIURLs.oauthPath(APIURLs.getFriendsPath)
 
         let parameters = [
@@ -25,7 +25,7 @@ extension APIClient {
         })!
     }
 
-    fileprivate func parseFriendsResponse(responseObject: Any?, completion: (([User]?, Error?) -> Void)?) {
+    fileprivate func parseFriendsResponse(responseObject: Any?, completion: DefaultFetchCompletionHandler?) {
         guard let responseObject = responseObject as? [String: AnyObject] else { fatalError("Can not parse response") }
         guard let response = responseObject["response"] as? [String: AnyObject] else { fatalError("Can not parse response") }
         guard let responseFriends = response["friends"] as? [String: AnyObject] else { fatalError("Can not parse response") }

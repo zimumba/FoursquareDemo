@@ -27,6 +27,12 @@ class UserFeedViewController: UITableViewController {
 
         guard let controller = segue.destination as? UserFeedChildController else { return }
 
+        var _controller = controller
+
+        _controller.didChangeContentHeightHandler = { [weak self] _ in
+            self?.tableView.reloadData()
+        }
+
         if let controller = controller as? UserInfoViewController {
             self.userFeedChildControllers[UserFeedViewControllerSections.info] = controller
         } else if let controller = controller as? FriendsViewController {

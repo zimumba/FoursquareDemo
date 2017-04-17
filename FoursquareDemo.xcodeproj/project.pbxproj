@@ -12,9 +12,11 @@
 		1350C3E01EA35222000F7288 /* UserFeedStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1350C3DF1EA35222000F7288 /* UserFeedStoryboard.storyboard */; };
 		1724208F75E2D3AD7653C035 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1724278EA70673AE3C341DA2 /* AppDelegate.swift */; };
 		172421384061E48E8D7B2937 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242DB823CA91CA0D5AF666 /* Photo.swift */; };
+		1724216ED78E48CC8781FD6C /* CheckinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242EBAD5931C65E983E3FD /* CheckinViewModel.swift */; };
 		17242176C3ACE9A8ABC71BCE /* User+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172423A8B5FA0DB9A1D33FE3 /* User+Mapping.swift */; };
 		17242188F45BE64675009BAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1724219D8A4E5F7B267B2218 /* LaunchScreen.storyboard */; };
 		1724219E6D87F3E88D932E4B /* _Checkin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1724259EEC06EA1B58B89ABE /* _Checkin.swift */; };
+		172421C33E6ED908BCB67A97 /* UserFeedBasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242E304734F61FD1574734 /* UserFeedBasicViewController.swift */; };
 		172421EE925E0F15F89907BF /* UIImage+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242F3F7A1AF3A5A1EB7319 /* UIImage+Helpers.swift */; };
 		172423230FD8A337A4A4C473 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242AB06900BC7F2BF0871F /* UserInfoViewController.swift */; };
 		1724239F875B1C9DD4052311 /* CheckinsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172424676328EB50376B7F9D /* CheckinsViewController.swift */; };
@@ -26,6 +28,7 @@
 		172424F8E454EF52F90B9C10 /* Localization+SwiftGen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172429CE9CF6B36581B5962D /* Localization+SwiftGen.swift */; };
 		1724256EDB3014961EAF3836 /* UserFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242A2C384ABB3E25CA57FA /* UserFeedViewController.swift */; };
 		1724257C339F32C558DF662E /* FSOAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 17242E1CA467FF76D6D2D98E /* FSOAuth.m */; };
+		172425A99D8D36F7D86FC178 /* CheckinTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172422D734278EF71406B030 /* CheckinTableViewCell.swift */; };
 		172425BD00D92B5AE6CF30E5 /* APIURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242418F3192BB8A0A9B16A /* APIURLs.swift */; };
 		1724262E26504098A284A508 /* UserFeedChildController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242482B656D7032B9339AA /* UserFeedChildController.swift */; };
 		172426527BAD9A453D31B4AF /* ScreenTransitionsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172420598689D3C8B2EC3E8F /* ScreenTransitionsHelper.swift */; };
@@ -40,8 +43,10 @@
 		172429B743453D970624710B /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242C73F9A3DED63D2AC138 /* FriendsViewController.swift */; };
 		172429C54267C77D3D0A5C95 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1724239BF4567DA3970F0117 /* Venue.swift */; };
 		17242A141FC32B1F37938AC0 /* StoryboardsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172427ED71FAE8ABB1ED330E /* StoryboardsFactory.swift */; };
+		17242A618E033B575B65DB58 /* UITableView+Templates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242079AD079A7134A0724A /* UITableView+Templates.swift */; };
 		17242A69FF45D68829EFBD8A /* Venue+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172425D4E2AA54E5E9781D56 /* Venue+Mapping.swift */; };
 		17242AF834374963002FDB6B /* Checkin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172425B68C45403B554BC3C8 /* Checkin.swift */; };
+		17242B5BFC5D47AA0EED8F4C /* FetchedDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1724277E95EC1EBC290821AC /* FetchedDataSource.swift */; };
 		17242B8057B75368283E4073 /* _Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242F7E87C50142D20229A0 /* _Venue.swift */; };
 		17242BDC49E9EA1ECEB4114D /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242014EAD371CACD8B289C /* ServiceLocator.swift */; };
 		17242C02AF48145365632A5A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17242053C22E51825C35DFF4 /* Localizable.strings */; };
@@ -53,6 +58,7 @@
 		17242E2B25D30A5BBDE30540 /* APIClient+Checkins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242A4B0001F08CE448355C /* APIClient+Checkins.swift */; };
 		17242E6217E2BDFC0E4D7B96 /* _Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172422CF7B9DF04FB86A3FB0 /* _Photo.swift */; };
 		17242E7F49CD84E48F405294 /* Checking+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242E2687DFEB9010F18FFA /* Checking+Mapping.swift */; };
+		17242F02F744379015C4F894 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242B2FF7135271080A2384 /* FriendTableViewCell.swift */; };
 		17242F6F8C096B35793B12BF /* FoursquareErrorsWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1724295CA23E1139EC21BE37 /* FoursquareErrorsWrapper.swift */; };
 		17242F95E3366BB6BBC0D0E0 /* AlertsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1724206ADBFCF3ABC3BC3ECF /* AlertsFactory.swift */; };
 		17242FE138552FA0315103C2 /* UIImage+Placeholders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172429DCFBD5383EB9C1E48A /* UIImage+Placeholders.swift */; };
@@ -71,10 +77,12 @@
 		17242053C22E51825C35DFF4 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		172420598689D3C8B2EC3E8F /* ScreenTransitionsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenTransitionsHelper.swift; sourceTree = "<group>"; };
 		1724206ADBFCF3ABC3BC3ECF /* AlertsFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertsFactory.swift; sourceTree = "<group>"; };
+		17242079AD079A7134A0724A /* UITableView+Templates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Templates.swift"; sourceTree = "<group>"; };
 		172420EBEB232EB034DAB806 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		1724228E6591AB1083EA8489 /* FSOAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSOAuth.h; sourceTree = "<group>"; };
 		172422AC30AE425C1FEAE1B3 /* LogoutWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoutWrapper.swift; sourceTree = "<group>"; };
 		172422CF7B9DF04FB86A3FB0 /* _Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Photo.swift; sourceTree = "<group>"; };
+		172422D734278EF71406B030 /* CheckinTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckinTableViewCell.swift; sourceTree = "<group>"; };
 		1724235DAC255784A0C72AF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1724239BF4567DA3970F0117 /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
 		172423A8B5FA0DB9A1D33FE3 /* User+Mapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+Mapping.swift"; sourceTree = "<group>"; };
@@ -88,6 +96,7 @@
 		172425B68C45403B554BC3C8 /* Checkin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checkin.swift; sourceTree = "<group>"; };
 		172425D4E2AA54E5E9781D56 /* Venue+Mapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Venue+Mapping.swift"; sourceTree = "<group>"; };
 		1724266BCDBD66EC0F14FDA5 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1724277E95EC1EBC290821AC /* FetchedDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchedDataSource.swift; sourceTree = "<group>"; };
 		1724278EA70673AE3C341DA2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		172427ED71FAE8ABB1ED330E /* StoryboardsFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardsFactory.swift; sourceTree = "<group>"; };
 		17242893A169670E407DA509 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = FoursquareDemo/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
@@ -102,6 +111,7 @@
 		17242A6C8F8D827F3B96CF77 /* Photo+Mapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Photo+Mapping.swift"; sourceTree = "<group>"; };
 		17242AB06900BC7F2BF0871F /* UserInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 		17242AB5F5B87C2DB2876C86 /* FoursquareDemo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FoursquareDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		17242B2FF7135271080A2384 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
 		17242B7C6755881BAC0D67A4 /* NSManagedObjectContext+CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+CoreDataHelper.swift"; sourceTree = "<group>"; };
 		17242BC768E7735EEBCEB3AE /* _User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _User.swift; sourceTree = "<group>"; };
 		17242C73F9A3DED63D2AC138 /* FriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +120,8 @@
 		17242E1CA467FF76D6D2D98E /* FSOAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSOAuth.m; sourceTree = "<group>"; };
 		17242E20AB3666F52CD491A8 /* APIClient+Friends.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "APIClient+Friends.swift"; sourceTree = "<group>"; };
 		17242E2687DFEB9010F18FFA /* Checking+Mapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Checking+Mapping.swift"; sourceTree = "<group>"; };
+		17242E304734F61FD1574734 /* UserFeedBasicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserFeedBasicViewController.swift; sourceTree = "<group>"; };
+		17242EBAD5931C65E983E3FD /* CheckinViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckinViewModel.swift; sourceTree = "<group>"; };
 		17242F3F7A1AF3A5A1EB7319 /* UIImage+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Helpers.swift"; sourceTree = "<group>"; };
 		17242F7E87C50142D20229A0 /* _Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Venue.swift; sourceTree = "<group>"; };
 		17242F838F208412A679C26D /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
@@ -192,6 +204,14 @@
 			path = Autogenerated;
 			sourceTree = "<group>";
 		};
+		17242080D86C6029AE5FA503 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				17242E304734F61FD1574734 /* UserFeedBasicViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		172420BB6882B2DAF2A4CD20 /* ApiClient */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,8 +227,18 @@
 			isa = PBXGroup;
 			children = (
 				172422DF724879C00705172F /* ViewControllers */,
+				172421B39C73A22CAACBF914 /* Views */,
+				1724261048541E6083C2CD77 /* ViewModels */,
 			);
 			path = Checkins;
+			sourceTree = "<group>";
+		};
+		172421B39C73A22CAACBF914 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				172422D734278EF71406B030 /* CheckinTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		1724220ED519DA2A0262E59E /* ViewControllers */ = {
@@ -309,6 +339,14 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		172425995E9F2E67138B279D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				17242B2FF7135271080A2384 /* FriendTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		172425EE4050D56334669E5C /* Autogenerated */ = {
 			isa = PBXGroup;
 			children = (
@@ -329,11 +367,20 @@
 			path = Factories;
 			sourceTree = "<group>";
 		};
+		1724261048541E6083C2CD77 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				17242EBAD5931C65E983E3FD /* CheckinViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		1724278131EB84CEC1CDF98E /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
 				17242014EAD371CACD8B289C /* ServiceLocator.swift */,
 				172422AC30AE425C1FEAE1B3 /* LogoutWrapper.swift */,
+				1724277E95EC1EBC290821AC /* FetchedDataSource.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -382,6 +429,7 @@
 			isa = PBXGroup;
 			children = (
 				17242010A3CC2AD4B2CF798F /* Protocols */,
+				17242080D86C6029AE5FA503 /* ViewControllers */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -407,6 +455,7 @@
 			isa = PBXGroup;
 			children = (
 				172422DEDDEACDEF421CB4FB /* ViewControllers */,
+				172425995E9F2E67138B279D /* Views */,
 			);
 			path = Friends;
 			sourceTree = "<group>";
@@ -416,6 +465,7 @@
 			children = (
 				172429DCFBD5383EB9C1E48A /* UIImage+Placeholders.swift */,
 				17242F3F7A1AF3A5A1EB7319 /* UIImage+Helpers.swift */,
+				17242079AD079A7134A0724A /* UITableView+Templates.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -675,6 +725,12 @@
 				17242E2B25D30A5BBDE30540 /* APIClient+Checkins.swift in Sources */,
 				17242A69FF45D68829EFBD8A /* Venue+Mapping.swift in Sources */,
 				17242E7F49CD84E48F405294 /* Checking+Mapping.swift in Sources */,
+				172421C33E6ED908BCB67A97 /* UserFeedBasicViewController.swift in Sources */,
+				17242B5BFC5D47AA0EED8F4C /* FetchedDataSource.swift in Sources */,
+				17242A618E033B575B65DB58 /* UITableView+Templates.swift in Sources */,
+				17242F02F744379015C4F894 /* FriendTableViewCell.swift in Sources */,
+				172425A99D8D36F7D86FC178 /* CheckinTableViewCell.swift in Sources */,
+				1724216ED78E48CC8781FD6C /* CheckinViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

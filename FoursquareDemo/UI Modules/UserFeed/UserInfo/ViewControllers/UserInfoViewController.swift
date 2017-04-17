@@ -9,7 +9,9 @@ import CoreData
 import SDWebImage
 import QuartzCore
 
-class UserInfoViewController: UIViewController {
+class UserInfoViewController: UIViewController, UserFeedChildController {
+
+    var didChangeContentHeightHandler: ((CGFloat) -> Void)?
 
     static let controllerContentHeight = CGFloat(180)
 
@@ -47,9 +49,9 @@ class UserInfoViewController: UIViewController {
     }
 
     public required init?(coder aDecoder: NSCoder) {
-        guard let user = User.currentUser() else { fatalError("Unexpected current user is empty") }
+        guard let currentUser = User.currentUser() else { fatalError("Unexpected current user is empty") }
 
-        self.user = user
+        self.user = currentUser
 
         super.init(coder: aDecoder)
     }
@@ -89,6 +91,11 @@ class UserInfoViewController: UIViewController {
             }
         }
     }
+
+    // MARK: UserFeedChildController
+    func contentHeight() -> CGFloat {
+        return UserInfoViewController.controllerContentHeight
+    }
 }
 
 extension UserInfoViewController: NSFetchedResultsControllerDelegate {
@@ -97,12 +104,5 @@ extension UserInfoViewController: NSFetchedResultsControllerDelegate {
         guard let user = controller.fetchedObjects?.last as? User else { fatalError("Unexpected current user is empty") }
 
         self.user = user
-    }
-}
-
-extension UserInfoViewController: UserFeedChildController {
-
-    func contentHeight() -> CGFloat {
-        return UserInfoViewController.controllerContentHeight
     }
 }
