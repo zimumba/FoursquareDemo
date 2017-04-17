@@ -47,6 +47,7 @@ extension APIClient {
                 return
             }
 
+            // Removed friend won't be deleted
             let allFriends: NSMutableSet = currentUser.friends.mutableCopy() as! NSMutableSet
             allFriends.addObjects(from: friends)
             currentUser.friends = allFriends

@@ -47,6 +47,7 @@ extension APIClient {
                 return
             }
 
+            // Removed friend won't be deleted
             for checkin in checkins {
                 checkin.user = currentUser
             }
