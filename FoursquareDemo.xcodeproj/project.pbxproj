@@ -14,19 +14,24 @@
 		172421384061E48E8D7B2937 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242DB823CA91CA0D5AF666 /* Photo.swift */; };
 		17242188F45BE64675009BAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1724219D8A4E5F7B267B2218 /* LaunchScreen.storyboard */; };
 		1724219E6D87F3E88D932E4B /* _Checkin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1724259EEC06EA1B58B89ABE /* _Checkin.swift */; };
+		172423230FD8A337A4A4C473 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242AB06900BC7F2BF0871F /* UserInfoViewController.swift */; };
+		1724239F875B1C9DD4052311 /* CheckinsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172424676328EB50376B7F9D /* CheckinsViewController.swift */; };
 		172423A4DC17DFAAA0171962 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242F838F208412A679C26D /* CoreDataHelper.swift */; };
 		172423E0E4A5293EB483387F /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242006C815A875D3B9BCD5 /* SignInViewController.swift */; };
 		1724247B301BE61C58538E88 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1724252C5D01796D79E00986 /* Types.swift */; };
 		17242497BBD0F605ED130F4D /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172420EBEB232EB034DAB806 /* APIClient.swift */; };
 		172424F8E454EF52F90B9C10 /* Localization+SwiftGen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172429CE9CF6B36581B5962D /* Localization+SwiftGen.swift */; };
+		1724256EDB3014961EAF3836 /* UserFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242A2C384ABB3E25CA57FA /* UserFeedViewController.swift */; };
 		1724257C339F32C558DF662E /* FSOAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 17242E1CA467FF76D6D2D98E /* FSOAuth.m */; };
 		172425BD00D92B5AE6CF30E5 /* APIURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242418F3192BB8A0A9B16A /* APIURLs.swift */; };
+		1724262E26504098A284A508 /* UserFeedChildController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242482B656D7032B9339AA /* UserFeedChildController.swift */; };
 		172426527BAD9A453D31B4AF /* ScreenTransitionsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172420598689D3C8B2EC3E8F /* ScreenTransitionsHelper.swift */; };
 		172426A8826406EC818EC043 /* NSManagedObjectContext+CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242B7C6755881BAC0D67A4 /* NSManagedObjectContext+CoreDataHelper.swift */; };
 		172427C45EC3643D294C9271 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1724266BCDBD66EC0F14FDA5 /* User.swift */; };
 		172427F2E9C19B6A194351C4 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242D0020350BA691DA4BE3 /* AppSettings.swift */; };
 		172428E7202259AA93BE492C /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172423CB756732FEF21FFCB3 /* UserSession.swift */; };
 		172429083B8ECADBF0CD0866 /* FoursquareAuthHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172429F2EBECFDC4523E962A /* FoursquareAuthHelper.swift */; };
+		172429B743453D970624710B /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242C73F9A3DED63D2AC138 /* FriendsViewController.swift */; };
 		172429C54267C77D3D0A5C95 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1724239BF4567DA3970F0117 /* Venue.swift */; };
 		17242A141FC32B1F37938AC0 /* StoryboardsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172427ED71FAE8ABB1ED330E /* StoryboardsFactory.swift */; };
 		17242AF834374963002FDB6B /* Checkin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172425B68C45403B554BC3C8 /* Checkin.swift */; };
@@ -60,6 +65,8 @@
 		1724239BF4567DA3970F0117 /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
 		172423CB756732FEF21FFCB3 /* UserSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSession.swift; sourceTree = "<group>"; };
 		17242418F3192BB8A0A9B16A /* APIURLs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIURLs.swift; sourceTree = "<group>"; };
+		172424676328EB50376B7F9D /* CheckinsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckinsViewController.swift; sourceTree = "<group>"; };
+		17242482B656D7032B9339AA /* UserFeedChildController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserFeedChildController.swift; sourceTree = "<group>"; };
 		1724252C5D01796D79E00986 /* Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
 		1724259EEC06EA1B58B89ABE /* _Checkin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Checkin.swift; sourceTree = "<group>"; };
 		172425B68C45403B554BC3C8 /* Checkin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checkin.swift; sourceTree = "<group>"; };
@@ -70,9 +77,12 @@
 		1724295CA23E1139EC21BE37 /* FoursquareErrorsWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoursquareErrorsWrapper.swift; sourceTree = "<group>"; };
 		172429CE9CF6B36581B5962D /* Localization+SwiftGen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Localization+SwiftGen.swift"; sourceTree = "<group>"; };
 		172429F2EBECFDC4523E962A /* FoursquareAuthHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoursquareAuthHelper.swift; sourceTree = "<group>"; };
+		17242A2C384ABB3E25CA57FA /* UserFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserFeedViewController.swift; sourceTree = "<group>"; };
+		17242AB06900BC7F2BF0871F /* UserInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 		17242AB5F5B87C2DB2876C86 /* FoursquareDemo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FoursquareDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		17242B7C6755881BAC0D67A4 /* NSManagedObjectContext+CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+CoreDataHelper.swift"; sourceTree = "<group>"; };
 		17242BC768E7735EEBCEB3AE /* _User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _User.swift; sourceTree = "<group>"; };
+		17242C73F9A3DED63D2AC138 /* FriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 		17242D0020350BA691DA4BE3 /* AppSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		17242DB823CA91CA0D5AF666 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		17242E1CA467FF76D6D2D98E /* FSOAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSOAuth.m; sourceTree = "<group>"; };
@@ -131,6 +141,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		17242010A3CC2AD4B2CF798F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				17242482B656D7032B9339AA /* UserFeedChildController.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		17242062A4606B58FF0AEACC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,10 +174,34 @@
 			path = ApiClient;
 			sourceTree = "<group>";
 		};
+		1724214B4DF58443CBFDDABC /* Checkins */ = {
+			isa = PBXGroup;
+			children = (
+				172422DF724879C00705172F /* ViewControllers */,
+			);
+			path = Checkins;
+			sourceTree = "<group>";
+		};
 		1724220ED519DA2A0262E59E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				17242006C815A875D3B9BCD5 /* SignInViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		172422DEDDEACDEF421CB4FB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				17242C73F9A3DED63D2AC138 /* FriendsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		172422DF724879C00705172F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				172424676328EB50376B7F9D /* CheckinsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -204,9 +246,21 @@
 			isa = PBXGroup;
 			children = (
 				172429B2CCC6718B0E499D94 /* Storyboards */,
-				17242BA47BB356DE06714D00 /* ViewControllers */,
+				17242AE2A532001089B54CE5 /* UserFeed */,
+				17242527877AF1835BFAE23F /* UserInfo */,
+				17242A2E8E3841B4D446B5AE /* Friends */,
+				1724214B4DF58443CBFDDABC /* Checkins */,
+				172428EF625520AA7FE81D56 /* Common */,
 			);
 			path = UserFeed;
+			sourceTree = "<group>";
+		};
+		17242527877AF1835BFAE23F /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				17242FEF726C59710BD47202 /* ViewControllers */,
+			);
+			path = UserInfo;
 			sourceTree = "<group>";
 		};
 		1724257093484D75E0377EE1 /* Storyboards */ = {
@@ -275,6 +329,14 @@
 			path = "UI Modules";
 			sourceTree = "<group>";
 		};
+		172428EF625520AA7FE81D56 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				17242010A3CC2AD4B2CF798F /* Protocols */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		172429B2CCC6718B0E499D94 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -290,6 +352,30 @@
 				1724220ED519DA2A0262E59E /* ViewControllers */,
 			);
 			path = Authorization;
+			sourceTree = "<group>";
+		};
+		17242A2E8E3841B4D446B5AE /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				172422DEDDEACDEF421CB4FB /* ViewControllers */,
+			);
+			path = Friends;
+			sourceTree = "<group>";
+		};
+		17242AE2A532001089B54CE5 /* UserFeed */ = {
+			isa = PBXGroup;
+			children = (
+				17242AEEDB702A55A137B85A /* ViewControllers */,
+			);
+			path = UserFeed;
+			sourceTree = "<group>";
+		};
+		17242AEEDB702A55A137B85A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				17242A2C384ABB3E25CA57FA /* UserFeedViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		17242B02BE93328C3C39D93E /* Helpers */ = {
@@ -308,13 +394,6 @@
 				17242418F3192BB8A0A9B16A /* APIURLs.swift */,
 			);
 			path = Constants;
-			sourceTree = "<group>";
-		};
-		17242BA47BB356DE06714D00 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		17242CFBE238D300B467AF5F /* CoreDataHelper */ = {
@@ -344,6 +423,14 @@
 				1724266BCDBD66EC0F14FDA5 /* User.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		17242FEF726C59710BD47202 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				17242AB06900BC7F2BF0871F /* UserInfoViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		CFF7397D346490F414C8D6B6 /* Frameworks */ = {
@@ -507,6 +594,11 @@
 				172421384061E48E8D7B2937 /* Photo.swift in Sources */,
 				17242AF834374963002FDB6B /* Checkin.swift in Sources */,
 				172427C45EC3643D294C9271 /* User.swift in Sources */,
+				1724256EDB3014961EAF3836 /* UserFeedViewController.swift in Sources */,
+				1724239F875B1C9DD4052311 /* CheckinsViewController.swift in Sources */,
+				172429B743453D970624710B /* FriendsViewController.swift in Sources */,
+				172423230FD8A337A4A4C473 /* UserInfoViewController.swift in Sources */,
+				1724262E26504098A284A508 /* UserFeedChildController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

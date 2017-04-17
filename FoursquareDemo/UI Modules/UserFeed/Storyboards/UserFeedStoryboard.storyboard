@@ -18,31 +18,153 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="Nat-ah-m7b" kind="relationship" relationship="rootViewController" id="UkC-dt-7ya"/>
+                        <segue destination="Jck-9O-G5u" kind="relationship" relationship="rootViewController" id="42C-vU-3SN"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="47P-uQ-pRO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-510" y="82"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="bo4-QP-cEG">
+        <!--User Feed View Controller-->
+        <scene sceneID="bMx-bZ-nkr">
             <objects>
-                <viewController id="Nat-ah-m7b" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="NcU-0N-LdC"/>
-                        <viewControllerLayoutGuide type="bottom" id="63V-w5-swc"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="uhj-2p-syw">
+                <tableViewController id="Jck-9O-G5u" customClass="UserFeedViewController" customModule="FoursquareDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="TDC-eq-fzs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="vYC-0X-4N6"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gXq-jn-kU3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <sections>
+                            <tableViewSection id="A5i-W7-74e">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="9XM-XT-O23">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9XM-XT-O23" id="olc-Jd-h4i">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Bx-ag-xOd">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                                    <connections>
+                                                        <segue destination="y8G-nK-Yrd" kind="embed" id="cz0-8f-O8f"/>
+                                                    </connections>
+                                                </containerView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="4Bx-ag-xOd" secondAttribute="bottom" id="95v-lO-Zuw"/>
+                                                <constraint firstItem="4Bx-ag-xOd" firstAttribute="leading" secondItem="olc-Jd-h4i" secondAttribute="leading" id="Yek-Ht-HkD"/>
+                                                <constraint firstAttribute="trailing" secondItem="4Bx-ag-xOd" secondAttribute="trailing" id="qOl-Sd-kNJ"/>
+                                                <constraint firstItem="4Bx-ag-xOd" firstAttribute="top" secondItem="olc-Jd-h4i" secondAttribute="top" id="zAu-4N-jk6"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Friends" id="hA2-Le-iCs">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="eLf-5Y-zKI">
+                                        <rect key="frame" x="0.0" y="128" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eLf-5Y-zKI" id="S8I-xZ-nVv">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mTf-qg-XuJ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                                    <connections>
+                                                        <segue destination="XmL-xM-qwZ" kind="embed" id="tlU-NK-nRN"/>
+                                                    </connections>
+                                                </containerView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="mTf-qg-XuJ" secondAttribute="bottom" id="V2V-QN-hpy"/>
+                                                <constraint firstItem="mTf-qg-XuJ" firstAttribute="leading" secondItem="S8I-xZ-nVv" secondAttribute="leading" id="WOf-yk-vUL"/>
+                                                <constraint firstAttribute="trailing" secondItem="mTf-qg-XuJ" secondAttribute="trailing" id="cXS-3l-FT1"/>
+                                                <constraint firstItem="mTf-qg-XuJ" firstAttribute="top" secondItem="S8I-xZ-nVv" secondAttribute="top" id="mB0-pQ-gux"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Checkins" id="7pU-cg-yTs">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="AVj-kb-pXJ">
+                                        <rect key="frame" x="0.0" y="256" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AVj-kb-pXJ" id="Rd3-vo-PbL">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w9S-ta-nXC">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                                    <connections>
+                                                        <segue destination="Bo4-ge-yct" kind="embed" id="jqk-gi-WKi"/>
+                                                    </connections>
+                                                </containerView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="w9S-ta-nXC" secondAttribute="trailing" id="67G-iC-NzX"/>
+                                                <constraint firstAttribute="bottom" secondItem="w9S-ta-nXC" secondAttribute="bottom" id="p2s-lC-Bh0"/>
+                                                <constraint firstItem="w9S-ta-nXC" firstAttribute="top" secondItem="Rd3-vo-PbL" secondAttribute="top" id="rOJ-Sd-RZS"/>
+                                                <constraint firstItem="w9S-ta-nXC" firstAttribute="leading" secondItem="Rd3-vo-PbL" secondAttribute="leading" id="ref-0C-zRE"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="Jck-9O-G5u" id="TN5-3e-1Ze"/>
+                            <outlet property="delegate" destination="Jck-9O-G5u" id="pAc-4J-KX2"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="r1v-GN-xmH"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uv4-uP-i0C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="343" y="84"/>
+            <point key="canvasLocation" x="281" y="81"/>
+        </scene>
+        <!--Checkins View Controller-->
+        <scene sceneID="8WE-WB-2uk">
+            <objects>
+                <viewController id="y8G-nK-Yrd" customClass="CheckinsViewController" customModule="FoursquareDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UUR-OQ-n0h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FK5-K0-pjv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042" y="-209"/>
+        </scene>
+        <!--Friends View Controller-->
+        <scene sceneID="6ph-r3-rPG">
+            <objects>
+                <viewController id="XmL-xM-qwZ" customClass="FriendsViewController" customModule="FoursquareDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="slC-0F-bjy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AQM-Pz-6ZB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1041" y="-67"/>
+        </scene>
+        <!--Checkins View Controller-->
+        <scene sceneID="U6a-tH-G3l">
+            <objects>
+                <viewController id="Bo4-ge-yct" customClass="CheckinsViewController" customModule="FoursquareDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bWD-MM-tjR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YVz-oF-a1p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1015" y="133"/>
         </scene>
     </scenes>
 </document>
