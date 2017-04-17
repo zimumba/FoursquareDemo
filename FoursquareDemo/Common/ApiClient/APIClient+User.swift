@@ -22,10 +22,19 @@ extension APIClient {
     fileprivate func parseUserResponse(responseObject: Any?, completion: ((User?, Error?) -> Void)?) {
         guard let responseObject = responseObject as? [String: AnyObject] else { fatalError("Can not parse response") }
         guard let response = responseObject["response"] as? [String: AnyObject] else { fatalError("Can not parse response") }
+        guard let responseUser = response["user"] as? [String: AnyObject] else { fatalError("Can not parse response") }
 
         let context = serviceLocator().coreDataHelper.importingManagedObjectContext!
         context.perform {
-            guard let user = FEMDeserializer.object(fromRepresentation: response, mapping: User.defaultMapping(), context: context) as? User else { fatalError("Can not parse response") }
+            guard let user = FEMDeserializer.object(fromRepresentation: responseUser, mapping: User.defaultMapping(), context: context) as? User else { fatalError("Can not parse response") }
+
+            do {
+                try context.deepSave()
+            } catch {
+                DispatchQueue.main.async {
+                    completion?(nil, error)
+                }
+            }
 
             let objectID = user.objectID
 

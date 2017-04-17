@@ -39,10 +39,10 @@ open class _Photo: NSManagedObject {
     // MARK: - Properties
 
     @NSManaged open
-    var prefix: String?
+    var prefix: String
 
     @NSManaged open
-    var suffix: String?
+    var suffix: String
 
     // MARK: - Relationships
 

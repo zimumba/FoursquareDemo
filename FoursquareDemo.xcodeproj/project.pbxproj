@@ -15,6 +15,7 @@
 		17242176C3ACE9A8ABC71BCE /* User+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172423A8B5FA0DB9A1D33FE3 /* User+Mapping.swift */; };
 		17242188F45BE64675009BAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1724219D8A4E5F7B267B2218 /* LaunchScreen.storyboard */; };
 		1724219E6D87F3E88D932E4B /* _Checkin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1724259EEC06EA1B58B89ABE /* _Checkin.swift */; };
+		172421EE925E0F15F89907BF /* UIImage+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242F3F7A1AF3A5A1EB7319 /* UIImage+Helpers.swift */; };
 		172423230FD8A337A4A4C473 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242AB06900BC7F2BF0871F /* UserInfoViewController.swift */; };
 		1724239F875B1C9DD4052311 /* CheckinsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172424676328EB50376B7F9D /* CheckinsViewController.swift */; };
 		172423A4DC17DFAAA0171962 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242F838F208412A679C26D /* CoreDataHelper.swift */; };
@@ -32,8 +33,10 @@
 		1724278929DB346652ABB1EA /* LogoutWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172422AC30AE425C1FEAE1B3 /* LogoutWrapper.swift */; };
 		172427C45EC3643D294C9271 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1724266BCDBD66EC0F14FDA5 /* User.swift */; };
 		172427F2E9C19B6A194351C4 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242D0020350BA691DA4BE3 /* AppSettings.swift */; };
+		17242818A4A4C9895EA664C1 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172424C73EB7BC7E100F8DAC /* UserViewModel.swift */; };
 		172428E7202259AA93BE492C /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172423CB756732FEF21FFCB3 /* UserSession.swift */; };
 		172429083B8ECADBF0CD0866 /* FoursquareAuthHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172429F2EBECFDC4523E962A /* FoursquareAuthHelper.swift */; };
+		1724296C28036F76B6CC3375 /* PhotosHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242929A296497CE0ECE152 /* PhotosHelper.swift */; };
 		172429B743453D970624710B /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242C73F9A3DED63D2AC138 /* FriendsViewController.swift */; };
 		172429C54267C77D3D0A5C95 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1724239BF4567DA3970F0117 /* Venue.swift */; };
 		17242A141FC32B1F37938AC0 /* StoryboardsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172427ED71FAE8ABB1ED330E /* StoryboardsFactory.swift */; };
@@ -48,6 +51,7 @@
 		17242E6217E2BDFC0E4D7B96 /* _Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172422CF7B9DF04FB86A3FB0 /* _Photo.swift */; };
 		17242F6F8C096B35793B12BF /* FoursquareErrorsWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1724295CA23E1139EC21BE37 /* FoursquareErrorsWrapper.swift */; };
 		17242F95E3366BB6BBC0D0E0 /* AlertsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1724206ADBFCF3ABC3BC3ECF /* AlertsFactory.swift */; };
+		17242FE138552FA0315103C2 /* UIImage+Placeholders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172429DCFBD5383EB9C1E48A /* UIImage+Placeholders.swift */; };
 		CD35666891C16256CA132E7F /* Pods_FoursquareDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7841A4259B911E5FC49540B7 /* Pods_FoursquareDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +78,7 @@
 		17242418F3192BB8A0A9B16A /* APIURLs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIURLs.swift; sourceTree = "<group>"; };
 		172424676328EB50376B7F9D /* CheckinsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckinsViewController.swift; sourceTree = "<group>"; };
 		17242482B656D7032B9339AA /* UserFeedChildController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserFeedChildController.swift; sourceTree = "<group>"; };
+		172424C73EB7BC7E100F8DAC /* UserViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		1724252C5D01796D79E00986 /* Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
 		1724259EEC06EA1B58B89ABE /* _Checkin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Checkin.swift; sourceTree = "<group>"; };
 		172425B68C45403B554BC3C8 /* Checkin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checkin.swift; sourceTree = "<group>"; };
@@ -82,8 +87,10 @@
 		172427ED71FAE8ABB1ED330E /* StoryboardsFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardsFactory.swift; sourceTree = "<group>"; };
 		17242893A169670E407DA509 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = FoursquareDemo/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		172429117C3EE5D6C4F1B5FC /* APIClient+User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "APIClient+User.swift"; sourceTree = "<group>"; };
+		17242929A296497CE0ECE152 /* PhotosHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosHelper.swift; sourceTree = "<group>"; };
 		1724295CA23E1139EC21BE37 /* FoursquareErrorsWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoursquareErrorsWrapper.swift; sourceTree = "<group>"; };
 		172429CE9CF6B36581B5962D /* Localization+SwiftGen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Localization+SwiftGen.swift"; sourceTree = "<group>"; };
+		172429DCFBD5383EB9C1E48A /* UIImage+Placeholders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Placeholders.swift"; sourceTree = "<group>"; };
 		172429F2EBECFDC4523E962A /* FoursquareAuthHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoursquareAuthHelper.swift; sourceTree = "<group>"; };
 		17242A2C384ABB3E25CA57FA /* UserFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserFeedViewController.swift; sourceTree = "<group>"; };
 		17242A6C8F8D827F3B96CF77 /* Photo+Mapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Photo+Mapping.swift"; sourceTree = "<group>"; };
@@ -95,6 +102,7 @@
 		17242D0020350BA691DA4BE3 /* AppSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		17242DB823CA91CA0D5AF666 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		17242E1CA467FF76D6D2D98E /* FSOAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSOAuth.m; sourceTree = "<group>"; };
+		17242F3F7A1AF3A5A1EB7319 /* UIImage+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Helpers.swift"; sourceTree = "<group>"; };
 		17242F7E87C50142D20229A0 /* _Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Venue.swift; sourceTree = "<group>"; };
 		17242F838F208412A679C26D /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		17242F9C59DE378C235068C9 /* DateFormattersLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormattersLocator.swift; sourceTree = "<group>"; };
@@ -244,6 +252,14 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
+		172423AF7031C21B119BC08E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				172424C73EB7BC7E100F8DAC /* UserViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		1724246C1624779C69CB3882 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -270,6 +286,7 @@
 			isa = PBXGroup;
 			children = (
 				17242FEF726C59710BD47202 /* ViewControllers */,
+				172423AF7031C21B119BC08E /* ViewModels */,
 			);
 			path = UserInfo;
 			sourceTree = "<group>";
@@ -328,6 +345,7 @@
 				172423603CE363086C2AEA29 /* Settings */,
 				17242B02BE93328C3C39D93E /* Helpers */,
 				17242883B663C2E3935ED4D0 /* Locators */,
+				17242A579C2FDE39F62CBC72 /* Extensions */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -383,6 +401,15 @@
 			path = Friends;
 			sourceTree = "<group>";
 		};
+		17242A579C2FDE39F62CBC72 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				172429DCFBD5383EB9C1E48A /* UIImage+Placeholders.swift */,
+				17242F3F7A1AF3A5A1EB7319 /* UIImage+Helpers.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		17242AE2A532001089B54CE5 /* UserFeed */ = {
 			isa = PBXGroup;
 			children = (
@@ -405,6 +432,7 @@
 				172429F2EBECFDC4523E962A /* FoursquareAuthHelper.swift */,
 				172420598689D3C8B2EC3E8F /* ScreenTransitionsHelper.swift */,
 				1724295CA23E1139EC21BE37 /* FoursquareErrorsWrapper.swift */,
+				17242929A296497CE0ECE152 /* PhotosHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -627,6 +655,10 @@
 				17242176C3ACE9A8ABC71BCE /* User+Mapping.swift in Sources */,
 				17242DDBA6FD6B7D1A3C95BD /* Photo+Mapping.swift in Sources */,
 				1724278929DB346652ABB1EA /* LogoutWrapper.swift in Sources */,
+				17242818A4A4C9895EA664C1 /* UserViewModel.swift in Sources */,
+				17242FE138552FA0315103C2 /* UIImage+Placeholders.swift in Sources */,
+				172421EE925E0F15F89907BF /* UIImage+Helpers.swift in Sources */,
+				1724296C28036F76B6CC3375 /* PhotosHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -36,15 +36,15 @@
                         <sections>
                             <tableViewSection id="A5i-W7-74e">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="9XM-XT-O23">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="180" id="9XM-XT-O23">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9XM-XT-O23" id="olc-Jd-h4i">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Bx-ag-xOd">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
                                                     <connections>
                                                         <segue destination="y8G-nK-Yrd" kind="embed" id="cz0-8f-O8f"/>
                                                     </connections>
@@ -63,7 +63,7 @@
                             <tableViewSection headerTitle="Friends" id="hA2-Le-iCs">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="eLf-5Y-zKI">
-                                        <rect key="frame" x="0.0" y="128" width="375" height="100"/>
+                                        <rect key="frame" x="0.0" y="208" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eLf-5Y-zKI" id="S8I-xZ-nVv">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
@@ -89,7 +89,7 @@
                             <tableViewSection headerTitle="Checkins" id="7pU-cg-yTs">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="AVj-kb-pXJ">
-                                        <rect key="frame" x="0.0" y="256" width="375" height="100"/>
+                                        <rect key="frame" x="0.0" y="336" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AVj-kb-pXJ" id="Rd3-vo-PbL">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
@@ -130,23 +130,52 @@
             </objects>
             <point key="canvasLocation" x="281" y="81"/>
         </scene>
-        <!--Checkins View Controller-->
+        <!--User Info View Controller-->
         <scene sceneID="8WE-WB-2uk">
             <objects>
-                <viewController id="y8G-nK-Yrd" customClass="CheckinsViewController" customModule="FoursquareDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="y8G-nK-Yrd" customClass="UserInfoViewController" customModule="FoursquareDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SVY-wA-7re"/>
                         <viewControllerLayoutGuide type="bottom" id="wSf-g5-Aat"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="UUR-OQ-n0h">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wEO-fV-Zmw">
+                                <rect key="frame" x="137" y="20" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Yq4-VI-AaL"/>
+                                    <constraint firstAttribute="height" constant="100" id="uzB-GF-sNJ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nuT-Pa-2Bu">
+                                <rect key="frame" x="16" y="139" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="rbw-Rg-B0g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wEO-fV-Zmw" firstAttribute="centerX" secondItem="UUR-OQ-n0h" secondAttribute="centerX" id="6m2-5R-fxP"/>
+                            <constraint firstItem="wEO-fV-Zmw" firstAttribute="top" secondItem="UUR-OQ-n0h" secondAttribute="top" constant="20" id="O9a-8F-MMg"/>
+                            <constraint firstAttribute="trailing" secondItem="nuT-Pa-2Bu" secondAttribute="trailing" constant="16" id="iCu-mr-RBD"/>
+                            <constraint firstItem="nuT-Pa-2Bu" firstAttribute="top" secondItem="wEO-fV-Zmw" secondAttribute="bottom" constant="19" id="nK0-ge-E0Q"/>
+                            <constraint firstItem="nuT-Pa-2Bu" firstAttribute="leading" secondItem="UUR-OQ-n0h" secondAttribute="leading" constant="16" id="upS-EF-P4F"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="avatarImageView" destination="wEO-fV-Zmw" id="Hic-ab-grk"/>
+                        <outlet property="fullNameLabel" destination="nuT-Pa-2Bu" id="tfY-v8-sfB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FK5-K0-pjv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1042" y="-209"/>
+            <point key="canvasLocation" x="1040.8" y="-288.75562218890559"/>
         </scene>
         <!--Friends View Controller-->
         <scene sceneID="6ph-r3-rPG">
