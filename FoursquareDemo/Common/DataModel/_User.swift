@@ -65,10 +65,18 @@ open class _User: NSManagedObject {
     }
 
     @NSManaged open
-    var friends: User?
+    var friends: NSSet
+
+    open func friendsSet() -> NSMutableSet {
+        return self.friends.mutableCopy() as! NSMutableSet
+    }
 
     @NSManaged open
-    var friendsReversal: User?
+    var friendsReversal: NSSet
+
+    open func friendsReversalSet() -> NSMutableSet {
+        return self.friendsReversal.mutableCopy() as! NSMutableSet
+    }
 
     @NSManaged open
     var photo: Photo?
@@ -99,6 +107,62 @@ extension _User {
         let mutable = self.checkins.mutableCopy() as! NSMutableSet
         mutable.remove(value)
         self.checkins = mutable.copy() as! NSSet
+    }
+
+}
+
+extension _User {
+
+    open func addFriends(_ objects: NSSet) {
+        let mutable = self.friends.mutableCopy() as! NSMutableSet
+        mutable.union(objects as Set<NSObject>)
+        self.friends = mutable.copy() as! NSSet
+    }
+
+    open func removeFriends(_ objects: NSSet) {
+        let mutable = self.friends.mutableCopy() as! NSMutableSet
+        mutable.minus(objects as Set<NSObject>)
+        self.friends = mutable.copy() as! NSSet
+    }
+
+    open func addFriendsObject(_ value: User) {
+        let mutable = self.friends.mutableCopy() as! NSMutableSet
+        mutable.add(value)
+        self.friends = mutable.copy() as! NSSet
+    }
+
+    open func removeFriendsObject(_ value: User) {
+        let mutable = self.friends.mutableCopy() as! NSMutableSet
+        mutable.remove(value)
+        self.friends = mutable.copy() as! NSSet
+    }
+
+}
+
+extension _User {
+
+    open func addFriendsReversal(_ objects: NSSet) {
+        let mutable = self.friendsReversal.mutableCopy() as! NSMutableSet
+        mutable.union(objects as Set<NSObject>)
+        self.friendsReversal = mutable.copy() as! NSSet
+    }
+
+    open func removeFriendsReversal(_ objects: NSSet) {
+        let mutable = self.friendsReversal.mutableCopy() as! NSMutableSet
+        mutable.minus(objects as Set<NSObject>)
+        self.friendsReversal = mutable.copy() as! NSSet
+    }
+
+    open func addFriendsReversalObject(_ value: User) {
+        let mutable = self.friendsReversal.mutableCopy() as! NSMutableSet
+        mutable.add(value)
+        self.friendsReversal = mutable.copy() as! NSSet
+    }
+
+    open func removeFriendsReversalObject(_ value: User) {
+        let mutable = self.friendsReversal.mutableCopy() as! NSMutableSet
+        mutable.remove(value)
+        self.friendsReversal = mutable.copy() as! NSSet
     }
 
 }

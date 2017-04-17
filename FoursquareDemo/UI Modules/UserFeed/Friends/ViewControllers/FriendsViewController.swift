@@ -8,7 +8,24 @@ import UIKit
 
 class FriendsViewController: UIViewController {
 
+    fileprivate var networkTask: URLSessionTask?
 
+    deinit {
+        self.networkTask?.cancel()
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        self.reloadData()
+    }
+
+    fileprivate func reloadData() {
+        self.networkTask?.cancel()
+        self.networkTask = serviceLocator().apiClient.getFriends() { [weak self] friends, Error in
+            
+        }
+    }
 }
 
 extension FriendsViewController: UserFeedChildController {

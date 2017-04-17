@@ -17,8 +17,8 @@
         <attribute name="identifier" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="checkins" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Checkin" inverseName="user" inverseEntity="Checkin" syncable="YES"/>
-        <relationship name="friends" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="User" inverseName="friendsReversal" inverseEntity="User" syncable="YES"/>
-        <relationship name="friendsReversal" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="friends" inverseEntity="User" syncable="YES"/>
+        <relationship name="friends" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="User" inverseName="friendsReversal" inverseEntity="User" syncable="YES"/>
+        <relationship name="friendsReversal" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User" inverseName="friends" inverseEntity="User" syncable="YES"/>
         <relationship name="photo" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Photo" inverseName="user" inverseEntity="Photo" syncable="YES"/>
     </entity>
     <entity name="Venue" representedClassName="Venue" syncable="YES">

@@ -40,15 +40,19 @@
 		172429B743453D970624710B /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242C73F9A3DED63D2AC138 /* FriendsViewController.swift */; };
 		172429C54267C77D3D0A5C95 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1724239BF4567DA3970F0117 /* Venue.swift */; };
 		17242A141FC32B1F37938AC0 /* StoryboardsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172427ED71FAE8ABB1ED330E /* StoryboardsFactory.swift */; };
+		17242A69FF45D68829EFBD8A /* Venue+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172425D4E2AA54E5E9781D56 /* Venue+Mapping.swift */; };
 		17242AF834374963002FDB6B /* Checkin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172425B68C45403B554BC3C8 /* Checkin.swift */; };
 		17242B8057B75368283E4073 /* _Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242F7E87C50142D20229A0 /* _Venue.swift */; };
 		17242BDC49E9EA1ECEB4114D /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242014EAD371CACD8B289C /* ServiceLocator.swift */; };
 		17242C02AF48145365632A5A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17242053C22E51825C35DFF4 /* Localizable.strings */; };
 		17242C0C2B4FD4D33250FDB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1724235DAC255784A0C72AF3 /* Assets.xcassets */; };
 		17242CD697BB770012F80FD5 /* _User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242BC768E7735EEBCEB3AE /* _User.swift */; };
+		17242D75A1F3538D7D4C954A /* APIClient+Friends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242E20AB3666F52CD491A8 /* APIClient+Friends.swift */; };
 		17242DA6A1604379B275032E /* APIClient+User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172429117C3EE5D6C4F1B5FC /* APIClient+User.swift */; };
 		17242DDBA6FD6B7D1A3C95BD /* Photo+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242A6C8F8D827F3B96CF77 /* Photo+Mapping.swift */; };
+		17242E2B25D30A5BBDE30540 /* APIClient+Checkins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242A4B0001F08CE448355C /* APIClient+Checkins.swift */; };
 		17242E6217E2BDFC0E4D7B96 /* _Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172422CF7B9DF04FB86A3FB0 /* _Photo.swift */; };
+		17242E7F49CD84E48F405294 /* Checking+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242E2687DFEB9010F18FFA /* Checking+Mapping.swift */; };
 		17242F6F8C096B35793B12BF /* FoursquareErrorsWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1724295CA23E1139EC21BE37 /* FoursquareErrorsWrapper.swift */; };
 		17242F95E3366BB6BBC0D0E0 /* AlertsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1724206ADBFCF3ABC3BC3ECF /* AlertsFactory.swift */; };
 		17242FE138552FA0315103C2 /* UIImage+Placeholders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172429DCFBD5383EB9C1E48A /* UIImage+Placeholders.swift */; };
@@ -82,6 +86,7 @@
 		1724252C5D01796D79E00986 /* Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
 		1724259EEC06EA1B58B89ABE /* _Checkin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Checkin.swift; sourceTree = "<group>"; };
 		172425B68C45403B554BC3C8 /* Checkin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checkin.swift; sourceTree = "<group>"; };
+		172425D4E2AA54E5E9781D56 /* Venue+Mapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Venue+Mapping.swift"; sourceTree = "<group>"; };
 		1724266BCDBD66EC0F14FDA5 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1724278EA70673AE3C341DA2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		172427ED71FAE8ABB1ED330E /* StoryboardsFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardsFactory.swift; sourceTree = "<group>"; };
@@ -93,6 +98,7 @@
 		172429DCFBD5383EB9C1E48A /* UIImage+Placeholders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Placeholders.swift"; sourceTree = "<group>"; };
 		172429F2EBECFDC4523E962A /* FoursquareAuthHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoursquareAuthHelper.swift; sourceTree = "<group>"; };
 		17242A2C384ABB3E25CA57FA /* UserFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserFeedViewController.swift; sourceTree = "<group>"; };
+		17242A4B0001F08CE448355C /* APIClient+Checkins.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "APIClient+Checkins.swift"; sourceTree = "<group>"; };
 		17242A6C8F8D827F3B96CF77 /* Photo+Mapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Photo+Mapping.swift"; sourceTree = "<group>"; };
 		17242AB06900BC7F2BF0871F /* UserInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 		17242AB5F5B87C2DB2876C86 /* FoursquareDemo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FoursquareDemo-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -102,6 +108,8 @@
 		17242D0020350BA691DA4BE3 /* AppSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		17242DB823CA91CA0D5AF666 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		17242E1CA467FF76D6D2D98E /* FSOAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSOAuth.m; sourceTree = "<group>"; };
+		17242E20AB3666F52CD491A8 /* APIClient+Friends.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "APIClient+Friends.swift"; sourceTree = "<group>"; };
+		17242E2687DFEB9010F18FFA /* Checking+Mapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Checking+Mapping.swift"; sourceTree = "<group>"; };
 		17242F3F7A1AF3A5A1EB7319 /* UIImage+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Helpers.swift"; sourceTree = "<group>"; };
 		17242F7E87C50142D20229A0 /* _Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Venue.swift; sourceTree = "<group>"; };
 		17242F838F208412A679C26D /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
@@ -189,6 +197,8 @@
 			children = (
 				172420EBEB232EB034DAB806 /* APIClient.swift */,
 				172429117C3EE5D6C4F1B5FC /* APIClient+User.swift */,
+				17242E20AB3666F52CD491A8 /* APIClient+Friends.swift */,
+				17242A4B0001F08CE448355C /* APIClient+Checkins.swift */,
 			);
 			path = ApiClient;
 			sourceTree = "<group>";
@@ -472,6 +482,8 @@
 				1724266BCDBD66EC0F14FDA5 /* User.swift */,
 				172423A8B5FA0DB9A1D33FE3 /* User+Mapping.swift */,
 				17242A6C8F8D827F3B96CF77 /* Photo+Mapping.swift */,
+				172425D4E2AA54E5E9781D56 /* Venue+Mapping.swift */,
+				17242E2687DFEB9010F18FFA /* Checking+Mapping.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -659,6 +671,10 @@
 				17242FE138552FA0315103C2 /* UIImage+Placeholders.swift in Sources */,
 				172421EE925E0F15F89907BF /* UIImage+Helpers.swift in Sources */,
 				1724296C28036F76B6CC3375 /* PhotosHelper.swift in Sources */,
+				17242D75A1F3538D7D4C954A /* APIClient+Friends.swift in Sources */,
+				17242E2B25D30A5BBDE30540 /* APIClient+Checkins.swift in Sources */,
+				17242A69FF45D68829EFBD8A /* Venue+Mapping.swift in Sources */,
+				17242E7F49CD84E48F405294 /* Checking+Mapping.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

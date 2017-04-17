@@ -13,7 +13,6 @@ extension User {
 
         mapping.primaryKey = UserAttributes.identifier.rawValue
 
-//        mapping.
         mapping.addAttributes(from: [
                 UserAttributes.identifier.rawValue: "id",
                 UserAttributes.firstName.rawValue: "firstName",
