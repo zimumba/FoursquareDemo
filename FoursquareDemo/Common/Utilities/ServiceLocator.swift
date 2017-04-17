@@ -16,7 +16,7 @@ class ServiceLocator {
 
     init() {
         if !self.appSettings.notFirstLaunch {
-            UserSession.logout()
+            self.userSession.logout()
             self.appSettings.notFirstLaunch = true
         }
     }

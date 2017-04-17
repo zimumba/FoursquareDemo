@@ -42,8 +42,6 @@ class FoursquareAuthHelper {
     func requestAccessToken(code: String, completion: FoursquareAuthHelperCompletionHandler?) {
         guard let foursquareCallbackURL = Bundle.main.infoDictionary?[FoursquareAuthHelper.foursquareCallbackURLKey] as? String else { fatalError("Please setup 'FoursquareCallbackURL' into Info.plist") }
 
-        self.completionHandler = nil
-
         FSOAuth.shared().requestAccessToken(
                 forCode: code,
                 clientId: FoursquareAuthHelper.foursquareClientID,

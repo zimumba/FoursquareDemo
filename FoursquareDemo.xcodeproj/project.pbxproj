@@ -11,7 +11,9 @@
 		1350C3DE1EA3479E000F7288 /* AuthorizationStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1350C3DD1EA3479E000F7288 /* AuthorizationStoryboard.storyboard */; };
 		1350C3E01EA35222000F7288 /* UserFeedStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1350C3DF1EA35222000F7288 /* UserFeedStoryboard.storyboard */; };
 		1724208F75E2D3AD7653C035 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1724278EA70673AE3C341DA2 /* AppDelegate.swift */; };
+		172421384061E48E8D7B2937 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242DB823CA91CA0D5AF666 /* Photo.swift */; };
 		17242188F45BE64675009BAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1724219D8A4E5F7B267B2218 /* LaunchScreen.storyboard */; };
+		1724219E6D87F3E88D932E4B /* _Checkin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1724259EEC06EA1B58B89ABE /* _Checkin.swift */; };
 		172423A4DC17DFAAA0171962 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242F838F208412A679C26D /* CoreDataHelper.swift */; };
 		172423E0E4A5293EB483387F /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242006C815A875D3B9BCD5 /* SignInViewController.swift */; };
 		1724247B301BE61C58538E88 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1724252C5D01796D79E00986 /* Types.swift */; };
@@ -21,13 +23,19 @@
 		172425BD00D92B5AE6CF30E5 /* APIURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242418F3192BB8A0A9B16A /* APIURLs.swift */; };
 		172426527BAD9A453D31B4AF /* ScreenTransitionsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172420598689D3C8B2EC3E8F /* ScreenTransitionsHelper.swift */; };
 		172426A8826406EC818EC043 /* NSManagedObjectContext+CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242B7C6755881BAC0D67A4 /* NSManagedObjectContext+CoreDataHelper.swift */; };
+		172427C45EC3643D294C9271 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1724266BCDBD66EC0F14FDA5 /* User.swift */; };
 		172427F2E9C19B6A194351C4 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242D0020350BA691DA4BE3 /* AppSettings.swift */; };
 		172428E7202259AA93BE492C /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172423CB756732FEF21FFCB3 /* UserSession.swift */; };
 		172429083B8ECADBF0CD0866 /* FoursquareAuthHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172429F2EBECFDC4523E962A /* FoursquareAuthHelper.swift */; };
+		172429C54267C77D3D0A5C95 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1724239BF4567DA3970F0117 /* Venue.swift */; };
 		17242A141FC32B1F37938AC0 /* StoryboardsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172427ED71FAE8ABB1ED330E /* StoryboardsFactory.swift */; };
+		17242AF834374963002FDB6B /* Checkin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172425B68C45403B554BC3C8 /* Checkin.swift */; };
+		17242B8057B75368283E4073 /* _Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242F7E87C50142D20229A0 /* _Venue.swift */; };
 		17242BDC49E9EA1ECEB4114D /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242014EAD371CACD8B289C /* ServiceLocator.swift */; };
 		17242C02AF48145365632A5A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17242053C22E51825C35DFF4 /* Localizable.strings */; };
 		17242C0C2B4FD4D33250FDB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1724235DAC255784A0C72AF3 /* Assets.xcassets */; };
+		17242CD697BB770012F80FD5 /* _User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17242BC768E7735EEBCEB3AE /* _User.swift */; };
+		17242E6217E2BDFC0E4D7B96 /* _Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172422CF7B9DF04FB86A3FB0 /* _Photo.swift */; };
 		17242F6F8C096B35793B12BF /* FoursquareErrorsWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1724295CA23E1139EC21BE37 /* FoursquareErrorsWrapper.swift */; };
 		17242F95E3366BB6BBC0D0E0 /* AlertsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1724206ADBFCF3ABC3BC3ECF /* AlertsFactory.swift */; };
 		CD35666891C16256CA132E7F /* Pods_FoursquareDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7841A4259B911E5FC49540B7 /* Pods_FoursquareDemo.framework */; };
@@ -47,10 +55,15 @@
 		1724206ADBFCF3ABC3BC3ECF /* AlertsFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertsFactory.swift; sourceTree = "<group>"; };
 		172420EBEB232EB034DAB806 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		1724228E6591AB1083EA8489 /* FSOAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSOAuth.h; sourceTree = "<group>"; };
+		172422CF7B9DF04FB86A3FB0 /* _Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Photo.swift; sourceTree = "<group>"; };
 		1724235DAC255784A0C72AF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1724239BF4567DA3970F0117 /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
 		172423CB756732FEF21FFCB3 /* UserSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSession.swift; sourceTree = "<group>"; };
 		17242418F3192BB8A0A9B16A /* APIURLs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIURLs.swift; sourceTree = "<group>"; };
 		1724252C5D01796D79E00986 /* Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		1724259EEC06EA1B58B89ABE /* _Checkin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Checkin.swift; sourceTree = "<group>"; };
+		172425B68C45403B554BC3C8 /* Checkin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checkin.swift; sourceTree = "<group>"; };
+		1724266BCDBD66EC0F14FDA5 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1724278EA70673AE3C341DA2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		172427ED71FAE8ABB1ED330E /* StoryboardsFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardsFactory.swift; sourceTree = "<group>"; };
 		17242893A169670E407DA509 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = FoursquareDemo/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
@@ -59,8 +72,11 @@
 		172429F2EBECFDC4523E962A /* FoursquareAuthHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoursquareAuthHelper.swift; sourceTree = "<group>"; };
 		17242AB5F5B87C2DB2876C86 /* FoursquareDemo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FoursquareDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		17242B7C6755881BAC0D67A4 /* NSManagedObjectContext+CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+CoreDataHelper.swift"; sourceTree = "<group>"; };
+		17242BC768E7735EEBCEB3AE /* _User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _User.swift; sourceTree = "<group>"; };
 		17242D0020350BA691DA4BE3 /* AppSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		17242DB823CA91CA0D5AF666 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		17242E1CA467FF76D6D2D98E /* FSOAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSOAuth.m; sourceTree = "<group>"; };
+		17242F7E87C50142D20229A0 /* _Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Venue.swift; sourceTree = "<group>"; };
 		17242F838F208412A679C26D /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		7841A4259B911E5FC49540B7 /* Pods_FoursquareDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoursquareDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DB842E4CB55D8FB1838CAB4 /* Pods-FoursquareDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoursquareDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoursquareDemo/Pods-FoursquareDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -152,6 +168,8 @@
 			isa = PBXGroup;
 			children = (
 				1350C3D61EA24460000F7288 /* FoursquareDemoDataModel.xcdatamodeld */,
+				172425EE4050D56334669E5C /* Autogenerated */,
+				17242FD3C70EF99C97C0BD6B /* Models */,
 			);
 			path = DataModel;
 			sourceTree = "<group>";
@@ -197,6 +215,17 @@
 				1350C3DD1EA3479E000F7288 /* AuthorizationStoryboard.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		172425EE4050D56334669E5C /* Autogenerated */ = {
+			isa = PBXGroup;
+			children = (
+				1724259EEC06EA1B58B89ABE /* _Checkin.swift */,
+				172422CF7B9DF04FB86A3FB0 /* _Photo.swift */,
+				17242BC768E7735EEBCEB3AE /* _User.swift */,
+				17242F7E87C50142D20229A0 /* _Venue.swift */,
+			);
+			name = Autogenerated;
 			sourceTree = "<group>";
 		};
 		1724260B4F4E9D707201DB0B /* Factories */ = {
@@ -304,6 +333,17 @@
 				17242E1CA467FF76D6D2D98E /* FSOAuth.m */,
 			);
 			path = FSOAuth;
+			sourceTree = "<group>";
+		};
+		17242FD3C70EF99C97C0BD6B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1724239BF4567DA3970F0117 /* Venue.swift */,
+				17242DB823CA91CA0D5AF666 /* Photo.swift */,
+				172425B68C45403B554BC3C8 /* Checkin.swift */,
+				1724266BCDBD66EC0F14FDA5 /* User.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		CFF7397D346490F414C8D6B6 /* Frameworks */ = {
@@ -459,6 +499,14 @@
 				172426527BAD9A453D31B4AF /* ScreenTransitionsHelper.swift in Sources */,
 				17242F95E3366BB6BBC0D0E0 /* AlertsFactory.swift in Sources */,
 				17242F6F8C096B35793B12BF /* FoursquareErrorsWrapper.swift in Sources */,
+				1724219E6D87F3E88D932E4B /* _Checkin.swift in Sources */,
+				17242E6217E2BDFC0E4D7B96 /* _Photo.swift in Sources */,
+				17242CD697BB770012F80FD5 /* _User.swift in Sources */,
+				17242B8057B75368283E4073 /* _Venue.swift in Sources */,
+				172429C54267C77D3D0A5C95 /* Venue.swift in Sources */,
+				172421384061E48E8D7B2937 /* Photo.swift in Sources */,
+				17242AF834374963002FDB6B /* Checkin.swift in Sources */,
+				172427C45EC3643D294C9271 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,6 +13,8 @@ class UserSession {
     static let foursquareAccessGrantKey = "foursquareAccessGrant"
     static let foursquareAccessTokenKey = "foursquareAccessToken"
 
+    static let currentUserIDKey = "currentUserID"
+
     var foursquareAccessGrant: String? {
         set {
             if let newValue = newValue {
@@ -39,8 +41,22 @@ class UserSession {
         }
     }
 
-    static func logout() {
-        UserSession().foursquareAccessGrant = nil
-        UserSession().foursquareAccessToken = nil
+    var currentUserID: String? {
+        set {
+            if let newValue = newValue {
+                self.keychain.set(newValue, forKey: UserSession.currentUserIDKey)
+            } else {
+                self.keychain.delete(UserSession.currentUserIDKey)
+            }
+        }
+        get {
+            return self.keychain.get(UserSession.currentUserIDKey)
+        }
+    }
+
+    func logout() {
+        self.foursquareAccessGrant = nil
+        self.foursquareAccessToken = nil
+        self.currentUserID = nil
     }
 }
