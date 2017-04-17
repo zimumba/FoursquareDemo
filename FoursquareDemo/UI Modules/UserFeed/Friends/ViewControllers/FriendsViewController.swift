@@ -6,7 +6,7 @@
 import Foundation
 import UIKit
 
-class FriendsViewController: UserFeedBasicViewController<User> {
+class FriendsViewController: UserFeedBasicViewController {
 
     override func setupDataSource() {
         guard let currentUser = User.currentUser() else { fatalError("Unexpected current user is empty") }
@@ -18,6 +18,9 @@ class FriendsViewController: UserFeedBasicViewController<User> {
         ]
 
         self.dataSource = FetchedDataSource(entityName: User.entityName(), predicate: predicate, sortDescriptors: sortDescriptors)
+        self.dataSource.didChangeContentHandler = { [weak self] in
+            self?.tableView.reloadData()
+        }
     }
 
     override func performNetworkTask(completion: DefaultFetchCompletionHandler?) -> URLSessionTask {
@@ -26,7 +29,7 @@ class FriendsViewController: UserFeedBasicViewController<User> {
 
     public override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: FriendTableViewCell = tableView.dequeueCell(forIndexPath: indexPath)
-        cell.user = self.dataSource.object(at: indexPath)
+        cell.user = self.dataSource.object(at: indexPath) as? User
 
         return cell
     }

@@ -8,18 +8,25 @@ import CoreData
 
 let UserFeedBasicViewControllerMinimumHeight = CGFloat(50)
 
-class UserFeedBasicViewController<T: NSManagedObject>: UIViewController, UserFeedChildController, UITableViewDataSource, UITableViewDelegate {
+class UserFeedBasicViewController: UIViewController, UserFeedChildController, UITableViewDataSource, UITableViewDelegate {
 
     var didChangeContentHeightHandler: ((CGFloat) -> Void)?
 
     @IBOutlet var tableView: UITableView!
     @IBOutlet var loadingIndicator: UIActivityIndicatorView!
 
-    var dataSource: FetchedDataSource<T>!
+    var dataSource: FetchedDataSource<NSManagedObject>!
 
     // MARK: UserFeedChildController
     func contentHeight() -> CGFloat {
-        return 0
+        var contentHeight = CGFloat(0)
+        if self.dataSource.totalObjectsCount() > 0 {
+            contentHeight = self.tableView.contentSize.height
+        } else if self.networkTask != nil {
+            contentHeight = UserFeedBasicViewControllerMinimumHeight
+        }
+
+        return contentHeight
     }
 
     fileprivate var networkTask: URLSessionTask?
@@ -86,14 +93,7 @@ class UserFeedBasicViewController<T: NSManagedObject>: UIViewController, UserFee
     }
 
     @objc func performContentHeightUpdates() {
-        var contentHeight = CGFloat(0)
-        if self.dataSource.totalObjectsCount() > 0 {
-            contentHeight = self.tableView.contentSize.height
-        } else if self.networkTask != nil {
-            contentHeight = UserFeedBasicViewControllerMinimumHeight
-        }
-
-        self.didChangeContentHeightHandler?(contentHeight)
+        self.didChangeContentHeightHandler?(self.contentHeight())
     }
 
     // MARK: UITableViewDataSource

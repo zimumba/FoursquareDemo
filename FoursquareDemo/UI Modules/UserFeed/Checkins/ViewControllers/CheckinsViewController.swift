@@ -6,7 +6,7 @@
 import Foundation
 import UIKit
 
-class CheckinsViewController: UserFeedBasicViewController<Checkin> {
+class CheckinsViewController: UserFeedBasicViewController {
 
     override func setupDataSource() {
         guard let currentUser = User.currentUser() else { fatalError("Unexpected current user is empty") }
@@ -17,6 +17,9 @@ class CheckinsViewController: UserFeedBasicViewController<Checkin> {
         ]
 
         self.dataSource = FetchedDataSource(entityName: Checkin.entityName(), predicate: predicate, sortDescriptors: sortDescriptors)
+        self.dataSource.didChangeContentHandler = { [weak self] in
+            self?.tableView.reloadData()
+        }
     }
 
     override func performNetworkTask(completion: DefaultFetchCompletionHandler?) -> URLSessionTask {
@@ -25,7 +28,7 @@ class CheckinsViewController: UserFeedBasicViewController<Checkin> {
 
     public override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: CheckinTableViewCell = tableView.dequeueCell(forIndexPath: indexPath)
-        cell.checkin = self.dataSource.object(at: indexPath)
+        cell.checkin = self.dataSource.object(at: indexPath) as? Checkin
 
         return cell
     }
