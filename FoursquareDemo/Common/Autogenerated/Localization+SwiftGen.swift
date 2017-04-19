@@ -8,6 +8,7 @@ import Foundation
 // swiftlint:disable variable_name
 // swiftlint:disable valid_docs
 
+// COMM: cool implementation but I don't see sense in such a solution when we have NSLocalizedString already
 struct L10n {
   /// OK
   static let OK = L10n.tr("OK")

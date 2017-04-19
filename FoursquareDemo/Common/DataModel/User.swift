@@ -4,6 +4,7 @@ import CoreData
 @objc(User)
 open class User: _User {
 
+    //COMM: force unwrapping is a risky operation
     static func currentUser(inContext context: NSManagedObjectContext = serviceLocator().coreDataHelper.defaultManagedObjectContext!) -> User? {
         guard let currentUserID = serviceLocator().userSession.currentUserID else { return nil}
 

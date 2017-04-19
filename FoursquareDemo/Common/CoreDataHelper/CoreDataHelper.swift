@@ -11,12 +11,15 @@ class CoreDataHelper {
 // If enabled syncing works in both ways:
 // in-memory <-> persistent storage
 // it's required for iCloud syncing f. e.
+    // COMM: this flag won't work as the only method that is using it - setupRootManagedObjectContext() - is called synchronously in init. And you cannot set the property before init.
     var shouldObserveRootContextChanges: Bool = false
 
     var rootManagedObjectContext: NSManagedObjectContext!
     var defaultManagedObjectContext: NSManagedObjectContext!
     var importingManagedObjectContext: NSManagedObjectContext!
 
+// COMM: the init method is too complicated. It should be syncronous and should set up only the instance's fields. The async method of the CoreData stack set up should be called separately
+// COMM: the method is pretty complicated and is hard to be read
     init(modelName: String, bundle: Bundle = Bundle.main, completion: DefaultCompletionHandler? = nil) {
         guard let modelURL = bundle.url(forResource: modelName, withExtension: "momd") else { fatalError("Unexpected data model path") }
         guard let model = NSManagedObjectModel(contentsOf: modelURL) else { fatalError("Can not create model") }

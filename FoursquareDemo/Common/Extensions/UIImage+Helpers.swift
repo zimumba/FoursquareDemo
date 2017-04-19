@@ -13,9 +13,11 @@ extension UIImage {
         let rect = CGRect(origin: CGPoint.zero, size: size)
 
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
+        // COMM: force unwrapping is a risky operation
         let context = UIGraphicsGetCurrentContext()!
         context.setFillColor(color.cgColor)
         context.fill(rect)
+        // COMM: force unwrapping is a risky operation
         imageWithColor = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
 

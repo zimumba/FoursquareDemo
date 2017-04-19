@@ -6,6 +6,8 @@
 import Foundation
 import AFNetworking
 
+// COMM: APIClient is a God Object. It performs all networking tasks, its extensions request, parse and save data to CoreData. In small project it is even a good idea but in the bigger one it will backfire with complicated architecture fully dependent on one class - APIClient
+
 class APIClient: AFHTTPSessionManager {
 
     required init(coder aDecoder: NSCoder) {

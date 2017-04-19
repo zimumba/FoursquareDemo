@@ -6,6 +6,7 @@
 import Foundation
 import CoreData
 
+// COMM: generic type "T" name is not descriptive.
 class FetchedDataSource<T: NSManagedObject>: NSObject, NSFetchedResultsControllerDelegate {
 
     fileprivate var entityName: String
